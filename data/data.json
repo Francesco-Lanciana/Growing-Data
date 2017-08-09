@@ -1,0 +1,866 @@
+{
+	"companies": {
+		"27085986": {
+			"name": "Alinta Dewap Pty Ltd"
+		},
+		"27812059": {
+			"name": "Archrock Partners, L.P."
+		},
+		"418524": {
+			"name": "Atlas Copco AB"
+		},
+		"114127724": {
+			"name": "Aurizon Holdings Limited"
+		},
+		"878590": {
+			"name": "Ausdrill Limited"
+		},
+		"9664255": {
+			"name": "Ausenco Limited"
+		},
+		"256654": {
+			"name": "BHP Billiton Limited"
+		},
+		"12157446": {
+			"name": "BHP Billiton Mitsubishi Alliance Pty Limited"
+		},
+		"21902702": {
+			"name": "BHP Billiton Mitsui Coal Pty. Ltd."
+		},
+		"23270929": {
+			"name": "Boart Longyear Limited"
+		},
+		"394466": {
+			"name": "BP p.l.c."
+		},
+		"2964740": {
+			"name": "Broadspectrum Pty Ltd"
+		},
+		"214068812": {
+			"name": "Calibre Group Limited"
+		},
+		"5885836": {
+			"name": "Carbones del Cerrejon Limited"
+		},
+		"228396569": {
+			"name": "Cardno Geotech"
+		},
+		"2422567": {
+			"name": "Catering International & Services Société Anonyme"
+		},
+		"3418091": {
+			"name": "Cavotec SA"
+		},
+		"27975636": {
+			"name": "Cemig Geração e Transmissão S.A."
+		},
+		"98506": {
+			"name": "Chevron Corporation"
+		},
+		"360791": {
+			"name": "Chicago Bridge & Iron Company N.V."
+		},
+		"35448669": {
+			"name": "Cimeco Pty Ltd."
+		},
+		"102330095": {
+			"name": "CITIC Heavy Industries Co., Ltd."
+		},
+		"37957072": {
+			"name": "Clean TeQ Holdings Limited"
+		},
+		"4509033": {
+			"name": "Clough Limited"
+		},
+		"5458343": {
+			"name": "Compañía Nacional de Fuerza Eléctrica S.A."
+		},
+		"692472": {
+			"name": "Compass Group PLC"
+		},
+		"32590567": {
+			"name": "Crestwood Midstream Partners LP"
+		},
+		"102382336": {
+			"name": "CTEC Pty Ltd."
+		},
+		"115908486": {
+			"name": "Delta SBD Limited"
+		},
+		"879131": {
+			"name": "Downer EDI Limited"
+		},
+		"114540493": {
+			"name": "E&A Contractors Pty Ltd."
+		},
+		"25454761": {
+			"name": "ElectraNet Pty Limited"
+		},
+		"9819236": {
+			"name": "EMAS CHIYODA Subsea AS"
+		},
+		"344856": {
+			"name": "Energy Developments Limited"
+		},
+		"114497692": {
+			"name": "Energy Drilling Australia Pty Ltd"
+		},
+		"358534": {
+			"name": "Eni S.p.A."
+		},
+		"22500403": {
+			"name": "Esso Australia Pty Ltd"
+		},
+		"130368124": {
+			"name": "FTS International Services, LLC"
+		},
+		"9559437": {
+			"name": "Global Dominion Access, S.A."
+		},
+		"875189": {
+			"name": "Group Five Limited"
+		},
+		"278341": {
+			"name": "Helmerich & Payne, Inc."
+		},
+		"4463145": {
+			"name": "Hydro-Electric Corporation"
+		},
+		"32261": {
+			"name": "Inseego Corp."
+		},
+		"38689613": {
+			"name": "JEF Drill and Blast Proprietary Limited"
+		},
+		"722005": {
+			"name": "LendLease Group"
+		},
+		"879496": {
+			"name": "Macmahon Holdings Limited"
+		},
+		"7688917": {
+			"name": "MMA Offshore Limited"
+		},
+		"878500": {
+			"name": "Monadelphous Group Limited"
+		},
+		"36059869": {
+			"name": "Ningbo Donly Co.,Ltd"
+		},
+		"29382276": {
+			"name": "O'Donnell Griffin Pty Limited"
+		},
+		"244127578": {
+			"name": "OTOC Australia Pty Ltd."
+		},
+		"41011890": {
+			"name": "Ottoway Engineering Pty Ltd"
+		},
+		"118205602": {
+			"name": "Platinum Energy Solutions, Inc."
+		},
+		"314124190": {
+			"name": "PT Pertamina EP Cepu"
+		},
+		"882794": {
+			"name": "Rain Industries Limited"
+		},
+		"1934052": {
+			"name": "RCR Haden Pty Ltd."
+		},
+		"4509028": {
+			"name": "RCR Tomlinson Limited"
+		},
+		"140244563": {
+			"name": "Resource Development Group Limited"
+		},
+		"23021173": {
+			"name": "Rock Australia Mining & Civil Pty. Ltd."
+		},
+		"5523299": {
+			"name": "Samarco Mineração S.A."
+		},
+		"3606442": {
+			"name": "Sapura Energy Berhad"
+		},
+		"35518414": {
+			"name": "Seanergy Maritime Holdings Corp."
+		},
+		"27229539": {
+			"name": "Sedgman Limited"
+		},
+		"24949748": {
+			"name": "Skywest Airlines Ltd"
+		},
+		"7844187": {
+			"name": "Sonatrach Spa"
+		},
+		"3181751": {
+			"name": "Sonomax Technologies Inc"
+		},
+		"38925325": {
+			"name": "Southern Cross Electrical Engineering Limited"
+		},
+		"29899157": {
+			"name": "Swick Mining Services Limited"
+		},
+		"236366854": {
+			"name": "Taggart Global USA, LLC"
+		},
+		"24379718": {
+			"name": "Tecno Fast ATCO"
+		},
+		"27405376": {
+			"name": "Tempo Australia Limited"
+		},
+		"35290": {
+			"name": "TETRA Technologies, Inc."
+		},
+		"1022470": {
+			"name": "Thiess Pty Ltd."
+		},
+		"37443198": {
+			"name": "Thoresen Shipping Singapore Pte Ltd."
+		},
+		"20361300": {
+			"name": "TK Corporation"
+		},
+		"11791138": {
+			"name": "Tox Free Solutions Limited"
+		},
+		"882551": {
+			"name": "UGL Limited"
+		},
+		"27404807": {
+			"name": "VEEM Ltd."
+		},
+		"30301206": {
+			"name": "WDS Limited"
+		},
+		"4515278": {
+			"name": "Western Areas Ltd"
+		},
+		"873963": {
+			"name": "Woodside Petroleum Ltd"
+		}
+	},
+	"metrics": {
+		"GD_RECEIVABLES_DAYS": { "name": "Receivables Days" },
+		"GD_INVENTORY_DAYS": { "name": "Inventory Days" },
+		"GD_PAYAABLES_DAYS": { "name": "Payables Days" }
+	},
+	"suppliers": {
+		"256654" : {
+			"27085986": {
+				"name": "Alinta Dewap Pty Ltd"
+			},
+			"27812059": {
+				"name": "Archrock Partners, L.P."
+			},
+			"418524": {
+				"name": "Atlas Copco AB"
+			},
+			"114127724": {
+				"name": "Aurizon Holdings Limited"
+			},
+			"878590": {
+				"name": "Ausdrill Limited"
+			},
+			"9664255": {
+				"name": "Ausenco Limited"
+			},
+			"256654": {
+				"name": "BHP Billiton Limited"
+			},
+			"12157446": {
+				"name": "BHP Billiton Mitsubishi Alliance Pty Limited"
+			},
+			"21902702": {
+				"name": "BHP Billiton Mitsui Coal Pty. Ltd."
+			},
+			"23270929": {
+				"name": "Boart Longyear Limited"
+			},
+			"394466": {
+				"name": "BP p.l.c."
+			},
+			"2964740": {
+				"name": "Broadspectrum Pty Ltd"
+			},
+			"214068812": {
+				"name": "Calibre Group Limited"
+			},
+			"5885836": {
+				"name": "Carbones del Cerrejon Limited"
+			},
+			"228396569": {
+				"name": "Cardno Geotech"
+			},
+			"2422567": {
+				"name": "Catering International & Services Société Anonyme"
+			},
+			"3418091": {
+				"name": "Cavotec SA"
+			},
+			"27975636": {
+				"name": "Cemig Geração e Transmissão S.A."
+			},
+			"98506": {
+				"name": "Chevron Corporation"
+			},
+			"360791": {
+				"name": "Chicago Bridge & Iron Company N.V."
+			},
+			"35448669": {
+				"name": "Cimeco Pty Ltd."
+			},
+			"102330095": {
+				"name": "CITIC Heavy Industries Co., Ltd."
+			},
+			"37957072": {
+				"name": "Clean TeQ Holdings Limited"
+			},
+			"4509033": {
+				"name": "Clough Limited"
+			},
+			"5458343": {
+				"name": "Compañía Nacional de Fuerza Eléctrica S.A."
+			},
+			"692472": {
+				"name": "Compass Group PLC"
+			},
+			"32590567": {
+				"name": "Crestwood Midstream Partners LP"
+			},
+			"102382336": {
+				"name": "CTEC Pty Ltd."
+			},
+			"115908486": {
+				"name": "Delta SBD Limited"
+			},
+			"879131": {
+				"name": "Downer EDI Limited"
+			},
+			"114540493": {
+				"name": "E&A Contractors Pty Ltd."
+			},
+			"25454761": {
+				"name": "ElectraNet Pty Limited"
+			},
+			"9819236": {
+				"name": "EMAS CHIYODA Subsea AS"
+			},
+			"344856": {
+				"name": "Energy Developments Limited"
+			},
+			"114497692": {
+				"name": "Energy Drilling Australia Pty Ltd"
+			},
+			"358534": {
+				"name": "Eni S.p.A."
+			},
+			"22500403": {
+				"name": "Esso Australia Pty Ltd"
+			},
+			"130368124": {
+				"name": "FTS International Services, LLC"
+			},
+			"9559437": {
+				"name": "Global Dominion Access, S.A."
+			},
+			"875189": {
+				"name": "Group Five Limited"
+			},
+			"278341": {
+				"name": "Helmerich & Payne, Inc."
+			},
+			"4463145": {
+				"name": "Hydro-Electric Corporation"
+			},
+			"32261": {
+				"name": "Inseego Corp."
+			},
+			"38689613": {
+				"name": "JEF Drill and Blast Proprietary Limited"
+			},
+			"722005": {
+				"name": "LendLease Group"
+			},
+			"879496": {
+				"name": "Macmahon Holdings Limited"
+			},
+			"7688917": {
+				"name": "MMA Offshore Limited"
+			},
+			"878500": {
+				"name": "Monadelphous Group Limited"
+			},
+			"36059869": {
+				"name": "Ningbo Donly Co.,Ltd"
+			},
+			"29382276": {
+				"name": "O'Donnell Griffin Pty Limited"
+			},
+			"244127578": {
+				"name": "OTOC Australia Pty Ltd."
+			},
+			"41011890": {
+				"name": "Ottoway Engineering Pty Ltd"
+			},
+			"118205602": {
+				"name": "Platinum Energy Solutions, Inc."
+			},
+			"314124190": {
+				"name": "PT Pertamina EP Cepu"
+			},
+			"882794": {
+				"name": "Rain Industries Limited"
+			},
+			"1934052": {
+				"name": "RCR Haden Pty Ltd."
+			},
+			"4509028": {
+				"name": "RCR Tomlinson Limited"
+			},
+			"140244563": {
+				"name": "Resource Development Group Limited"
+			},
+			"23021173": {
+				"name": "Rock Australia Mining & Civil Pty. Ltd."
+			},
+			"5523299": {
+				"name": "Samarco Mineração S.A."
+			},
+			"3606442": {
+				"name": "Sapura Energy Berhad"
+			},
+			"35518414": {
+				"name": "Seanergy Maritime Holdings Corp."
+			},
+			"27229539": {
+				"name": "Sedgman Limited"
+			},
+			"24949748": {
+				"name": "Skywest Airlines Ltd"
+			},
+			"7844187": {
+				"name": "Sonatrach Spa"
+			},
+			"3181751": {
+				"name": "Sonomax Technologies Inc"
+			},
+			"38925325": {
+				"name": "Southern Cross Electrical Engineering Limited"
+			},
+			"29899157": {
+				"name": "Swick Mining Services Limited"
+			},
+			"236366854": {
+				"name": "Taggart Global USA, LLC"
+			},
+			"24379718": {
+				"name": "Tecno Fast ATCO"
+			},
+			"27405376": {
+				"name": "Tempo Australia Limited"
+			},
+			"35290": {
+				"name": "TETRA Technologies, Inc."
+			},
+			"1022470": {
+				"name": "Thiess Pty Ltd."
+			},
+			"37443198": {
+				"name": "Thoresen Shipping Singapore Pte Ltd."
+			},
+			"20361300": {
+				"name": "TK Corporation"
+			},
+			"11791138": {
+				"name": "Tox Free Solutions Limited"
+			},
+			"882551": {
+				"name": "UGL Limited"
+			},
+			"27404807": {
+				"name": "VEEM Ltd."
+			},
+			"30301206": {
+				"name": "WDS Limited"
+			},
+			"4515278": {
+				"name": "Western Areas Ltd"
+			},
+			"873963": {
+				"name": "Woodside Petroleum Ltd"
+			}
+		}
+	},
+	"filings": {
+		"32261": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 45.2179,"GD_PAYABLES_DAYS": 64.0819,"GD_INVENTORY_DAYS": 54.6711},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 43.5589,"GD_PAYABLES_DAYS": 34.674,"GD_INVENTORY_DAYS": 39.2736},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 47.7084,"GD_PAYABLES_DAYS": 89.1894,"GD_INVENTORY_DAYS": 97.6151},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 58.2551,"GD_PAYABLES_DAYS": 85.5012,"GD_INVENTORY_DAYS": 135.298},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 33.2742,"GD_PAYABLES_DAYS": 79.3374,"GD_INVENTORY_DAYS": 79.0835}
+		},
+		"35290": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 73.077,"GD_PAYABLES_DAYS": 39.1206,"GD_INVENTORY_DAYS": 59.7606},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 72.5101,"GD_PAYABLES_DAYS": 36.9677,"GD_INVENTORY_DAYS": 53.829},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 76.8793,"GD_PAYABLES_DAYS": 52.3883,"GD_INVENTORY_DAYS": 83.1944},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 59.4816,"GD_PAYABLES_DAYS": 30.5656,"GD_INVENTORY_DAYS": 57.5788},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 60.04,"GD_PAYABLES_DAYS": 34.0773,"GD_INVENTORY_DAYS": 79.1214}
+		},
+		"98506": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 34.3388,"GD_PAYABLES_DAYS": 53.5216,"GD_INVENTORY_DAYS": 14.4379},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 37.2477,"GD_PAYABLES_DAYS": 55.2106,"GD_INVENTORY_DAYS": 15.4391},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 31.0038,"GD_PAYABLES_DAYS": 50.7056,"GD_INVENTORY_DAYS": 17.36},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 37.7013,"GD_PAYABLES_DAYS": 57.7499,"GD_INVENTORY_DAYS": 27.0633},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 49.6818,"GD_PAYABLES_DAYS": 70.234,"GD_INVENTORY_DAYS": 27.2128}
+		},
+		"256654": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 24.8648,"GD_PAYABLES_DAYS": 216.294,"GD_INVENTORY_DAYS": 154.481},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 30.205,"GD_PAYABLES_DAYS": 317.578,"GD_INVENTORY_DAYS": 243.208},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 31.2753,"GD_PAYABLES_DAYS": 257.919,"GD_INVENTORY_DAYS": 222.41},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 34.9572,"GD_PAYABLES_DAYS": 348.313,"GD_INVENTORY_DAYS": 202.322},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 36.7422,"GD_PAYABLES_DAYS": 299.617,"GD_INVENTORY_DAYS": 189.644}
+		},
+		"278341": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 71.8568,"GD_PAYABLES_DAYS": 33.2408,"GD_INVENTORY_DAYS": 16.4258},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 66.9552,"GD_PAYABLES_DAYS": 28.5416,"GD_INVENTORY_DAYS": 17.5675},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 69.2695,"GD_PAYABLES_DAYS": 33.1095,"GD_INVENTORY_DAYS": 19.3241},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 51.4821,"GD_PAYABLES_DAYS": 23.1771,"GD_INVENTORY_DAYS": 27.5422},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 64.4946,"GD_PAYABLES_DAYS": 39.5782,"GD_INVENTORY_DAYS": 51.5663}
+		},
+		"344856": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 53.2067,"GD_PAYABLES_DAYS": 64.615,"GD_INVENTORY_DAYS": 39.9899},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 46.3824,"GD_PAYABLES_DAYS": 87.9736,"GD_INVENTORY_DAYS": 58.9138},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 49.4868,"GD_PAYABLES_DAYS": 74.2999,"GD_INVENTORY_DAYS": 63.1014},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 43.18,"GD_PAYABLES_DAYS": 86.5356,"GD_INVENTORY_DAYS": 73.2647}
+		},
+		"358534": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 58.5969,"GD_PAYABLES_DAYS": 57.8107,"GD_INVENTORY_DAYS": 32.9458},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 80.7951,"GD_PAYABLES_DAYS": 82.918,"GD_INVENTORY_DAYS": 37.0991},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 106.288,"GD_PAYABLES_DAYS": 111.822,"GD_INVENTORY_DAYS": 35.6419},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 69.8886,"GD_PAYABLES_DAYS": 73.1365,"GD_INVENTORY_DAYS": 29.4929},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 73.9334,"GD_PAYABLES_DAYS": 108.459,"GD_INVENTORY_DAYS": 38.4058}
+		},
+		"360791": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 50.1056,"GD_PAYABLES_DAYS": 50.371,"GD_INVENTORY_DAYS": 25.8479},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 45.58,"GD_PAYABLES_DAYS": 43.2133,"GD_INVENTORY_DAYS": 32.4696},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 36.7553,"GD_PAYABLES_DAYS": 40.2639,"GD_INVENTORY_DAYS": 33.9832},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 37.5803,"GD_PAYABLES_DAYS": 37.4907,"GD_INVENTORY_DAYS": 31.5512},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 24.8695,"GD_PAYABLES_DAYS": 42.1516,"GD_INVENTORY_DAYS": 28.9057}
+		},
+		"394466": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 26.7238,"GD_PAYABLES_DAYS": 34.2667,"GD_INVENTORY_DAYS": 31.2072},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 29.0447,"GD_PAYABLES_DAYS": 35.619,"GD_INVENTORY_DAYS": 32.0886},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 20.7903,"GD_PAYABLES_DAYS": 30.1819,"GD_INVENTORY_DAYS": 21.7378},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 22.9173,"GD_PAYABLES_DAYS": 36.4153,"GD_INVENTORY_DAYS": 27.1502},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 27.2819,"GD_PAYABLES_DAYS": 55.922,"GD_INVENTORY_DAYS": 41.6672}
+		},
+		"418524": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 66.0752,"GD_PAYABLES_DAYS": 46.0009,"GD_INVENTORY_DAYS": 121.202},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 73.885,"GD_PAYABLES_DAYS": 47.7423,"GD_INVENTORY_DAYS": 125.165},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 79.468,"GD_PAYABLES_DAYS": 52.2537,"GD_INVENTORY_DAYS": 121.837},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 73.8017,"GD_PAYABLES_DAYS": 52.2291,"GD_INVENTORY_DAYS": 112.154},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 78.7323,"GD_PAYABLES_DAYS": 65.7769,"GD_INVENTORY_DAYS": 108.18}
+		},
+		"692472": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 38.8858,"GD_PAYABLES_DAYS": 36.2015,"GD_INVENTORY_DAYS": 7.21267},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 36.6102,"GD_PAYABLES_DAYS": 36.1118,"GD_INVENTORY_DAYS": 6.82618},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 36.5347,"GD_PAYABLES_DAYS": 37.4727,"GD_INVENTORY_DAYS": 7.44955},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 32.5782,"GD_PAYABLES_DAYS": 38.1229,"GD_INVENTORY_DAYS": 7.67905},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 36.0066,"GD_PAYABLES_DAYS": 41.8861,"GD_INVENTORY_DAYS": 8.51462}
+		},
+		"722005": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 50.8961,"GD_PAYABLES_DAYS": 85.9073,"GD_INVENTORY_DAYS": 40.3605},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 50.3689,"GD_PAYABLES_DAYS": 76.9723,"GD_INVENTORY_DAYS": 34.1765},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 38.001,"GD_PAYABLES_DAYS": 81.1017,"GD_INVENTORY_DAYS": 42.0752},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 40.0538,"GD_PAYABLES_DAYS": 87.8243,"GD_INVENTORY_DAYS": 62.6593},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 35.5505,"GD_PAYABLES_DAYS": 81.3239,"GD_INVENTORY_DAYS": 52.7511}
+		},
+		"873963": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 25.8168,"GD_PAYABLES_DAYS": 74.05,"GD_INVENTORY_DAYS": 66.5897},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 17.4924,"GD_PAYABLES_DAYS": 58.9678,"GD_INVENTORY_DAYS": 52.4159},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 14.7276,"GD_PAYABLES_DAYS": 72.695,"GD_INVENTORY_DAYS": 62.782},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 21.8419,"GD_PAYABLES_DAYS": 66.385,"GD_INVENTORY_DAYS": 39.8779},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 27.0503,"GD_PAYABLES_DAYS": 79.1034,"GD_INVENTORY_DAYS": 59.8295}
+		},
+		"875189": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 113.408,"GD_PAYABLES_DAYS": 61.4728,"GD_INVENTORY_DAYS": 20.4553},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 93.5968,"GD_PAYABLES_DAYS": 44.5964,"GD_INVENTORY_DAYS": 14.5506},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 87.9056,"GD_PAYABLES_DAYS": 43.8513,"GD_INVENTORY_DAYS": 13.2568},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 98.6567,"GD_PAYABLES_DAYS": 33.2992,"GD_INVENTORY_DAYS": 14.6157},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 97.8284,"GD_PAYABLES_DAYS": 20.3373,"GD_INVENTORY_DAYS": 11.7299}
+		},
+		"878500": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 54.8062,"GD_PAYABLES_DAYS": 20.7898,"GD_INVENTORY_DAYS": null},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 53.0779,"GD_PAYABLES_DAYS": 22.2276,"GD_INVENTORY_DAYS": null},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 54.3593,"GD_PAYABLES_DAYS": 5.12554,"GD_INVENTORY_DAYS": null},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 71.0134,"GD_PAYABLES_DAYS": 14.3575,"GD_INVENTORY_DAYS": null},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 83.0441,"GD_PAYABLES_DAYS": 10.3178,"GD_INVENTORY_DAYS": null}
+		},
+		"878590": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 78.0247,"GD_PAYABLES_DAYS": null,"GD_INVENTORY_DAYS": 98.7747},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 48.7293,"GD_PAYABLES_DAYS": 24.4278,"GD_INVENTORY_DAYS": 126.145},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 46.5488,"GD_PAYABLES_DAYS": 29.5647,"GD_INVENTORY_DAYS": 145.985},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 47.8137,"GD_PAYABLES_DAYS": 31.481,"GD_INVENTORY_DAYS": 153.884},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 58.6264,"GD_PAYABLES_DAYS": 32.8714,"GD_INVENTORY_DAYS": 129.383}
+		},
+		"879131": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 70.9914,"GD_PAYABLES_DAYS": 30.2655,"GD_INVENTORY_DAYS": 14.806},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 61.6615,"GD_PAYABLES_DAYS": 21.4496,"GD_INVENTORY_DAYS": 16.6717},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 55.8373,"GD_PAYABLES_DAYS": 20.0026,"GD_INVENTORY_DAYS": 22.1057},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 56.0559,"GD_PAYABLES_DAYS": 22.2474,"GD_INVENTORY_DAYS": 21.2126},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 57.2064,"GD_PAYABLES_DAYS": 22.0473,"GD_INVENTORY_DAYS": 20.1}
+		},
+		"879496": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 140.196,"GD_PAYABLES_DAYS": 132.247,"GD_INVENTORY_DAYS": 55.5315},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 49.8333,"GD_PAYABLES_DAYS": 45.9816,"GD_INVENTORY_DAYS": 65.5919},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 43.2243,"GD_PAYABLES_DAYS": 59.6927,"GD_INVENTORY_DAYS": 95.5522},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 29.4015,"GD_PAYABLES_DAYS": 29.586,"GD_INVENTORY_DAYS": 76.8373},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 53.1194,"GD_PAYABLES_DAYS": 55.5501,"GD_INVENTORY_DAYS": 84.9761}
+		},
+		"882551": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 46.596,"GD_PAYABLES_DAYS": 35.9002,"GD_INVENTORY_DAYS": 34.5034},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 113.593,"GD_PAYABLES_DAYS": 83.1467,"GD_INVENTORY_DAYS": 76.8948},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 43.5277,"GD_PAYABLES_DAYS": 47.7147,"GD_INVENTORY_DAYS": 72.1652},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 41.0271,"GD_PAYABLES_DAYS": 41.6918,"GD_INVENTORY_DAYS": 47.285},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 36.0274,"GD_PAYABLES_DAYS": 52.7566,"GD_INVENTORY_DAYS": 52.3812}
+		},
+		"882794": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 38.7088,"GD_PAYABLES_DAYS": 64.1951,"GD_INVENTORY_DAYS": 105.013},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 47.9464,"GD_PAYABLES_DAYS": 58.0998,"GD_INVENTORY_DAYS": 92.4148},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 42.0377,"GD_PAYABLES_DAYS": 53.0135,"GD_INVENTORY_DAYS": 81.2441},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 42.8584,"GD_PAYABLES_DAYS": 65.7371,"GD_INVENTORY_DAYS": 104.185},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 41.7853,"GD_PAYABLES_DAYS": 59.3369,"GD_INVENTORY_DAYS": 96.0671}
+		},
+		"2422567": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 63.5418,"GD_PAYABLES_DAYS": 60.9462,"GD_INVENTORY_DAYS": 16.7955},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 74.5098,"GD_PAYABLES_DAYS": 62.5369,"GD_INVENTORY_DAYS": 20.2588},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 78.4878,"GD_PAYABLES_DAYS": 71.4801,"GD_INVENTORY_DAYS": 23.1321},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 69.3016,"GD_PAYABLES_DAYS": 60.7285,"GD_INVENTORY_DAYS": 21.1633},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 81.3645,"GD_PAYABLES_DAYS": 65.6143,"GD_INVENTORY_DAYS": 25.3858}
+		},
+		"2964740": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 62.3341,"GD_PAYABLES_DAYS": 54.7512,"GD_INVENTORY_DAYS": 20.941},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 51.8309,"GD_PAYABLES_DAYS": 50.6668,"GD_INVENTORY_DAYS": 25.2341},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 48.7387,"GD_PAYABLES_DAYS": 37.9626,"GD_INVENTORY_DAYS": 21.6708},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 42.3191,"GD_PAYABLES_DAYS": 32.4285,"GD_INVENTORY_DAYS": 19.3501},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 43.2883,"GD_PAYABLES_DAYS": 32.9538,"GD_INVENTORY_DAYS": 12.0479}
+		},
+		"3418091": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 83.8943,"GD_PAYABLES_DAYS": 94.6169,"GD_INVENTORY_DAYS": 131.067},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 78.0721,"GD_PAYABLES_DAYS": 96.6893,"GD_INVENTORY_DAYS": 123.016},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 94.3147,"GD_PAYABLES_DAYS": 92.6255,"GD_INVENTORY_DAYS": 128.369},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 97.7812,"GD_PAYABLES_DAYS": 94.5247,"GD_INVENTORY_DAYS": 144.821},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 88.7719,"GD_PAYABLES_DAYS": 84.945,"GD_INVENTORY_DAYS": 149.826}
+		},
+		"3606442": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 158.087,"GD_PAYABLES_DAYS": 190.808,"GD_INVENTORY_DAYS": 17.4943},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 124.16,"GD_PAYABLES_DAYS": 114.059,"GD_INVENTORY_DAYS": 17.4224},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 80.7159,"GD_PAYABLES_DAYS": 78.1479,"GD_INVENTORY_DAYS": 30.6038},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 87.2578,"GD_PAYABLES_DAYS": 99.8346,"GD_INVENTORY_DAYS": 39.9182},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 116.782,"GD_PAYABLES_DAYS": 111.085,"GD_INVENTORY_DAYS": 33.7613}
+		},
+		"4463145": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 49.3772,"GD_PAYABLES_DAYS": 22.2067,"GD_INVENTORY_DAYS": 28.7386},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 55.1209,"GD_PAYABLES_DAYS": 20.7257,"GD_INVENTORY_DAYS": 13.1074},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 44.4255,"GD_PAYABLES_DAYS": 17.5053,"GD_INVENTORY_DAYS": 0.579023},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 61.6707,"GD_PAYABLES_DAYS": 26.8285,"GD_INVENTORY_DAYS": 0.801289},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 102.412,"GD_PAYABLES_DAYS": 73.1628,"GD_INVENTORY_DAYS": 0.994888}
+		},
+		"4509028": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 63.0429,"GD_PAYABLES_DAYS": 15.7404,"GD_INVENTORY_DAYS": 20.17},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 65.2466,"GD_PAYABLES_DAYS": 19.9046,"GD_INVENTORY_DAYS": 8.81904},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 63.5536,"GD_PAYABLES_DAYS": 23.3141,"GD_INVENTORY_DAYS": 6.36888},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 75.2936,"GD_PAYABLES_DAYS": 35.0149,"GD_INVENTORY_DAYS": 7.00274},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 79.4035,"GD_PAYABLES_DAYS": 26.486,"GD_INVENTORY_DAYS": 6.38394}
+		},
+		"4509033": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 60.4586,"GD_PAYABLES_DAYS": 32.4814,"GD_INVENTORY_DAYS": null},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 57.3744,"GD_PAYABLES_DAYS": 58.0442,"GD_INVENTORY_DAYS": null},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 47.5805,"GD_PAYABLES_DAYS": 47.9076,"GD_INVENTORY_DAYS": null},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 68.6739,"GD_PAYABLES_DAYS": 70.0106,"GD_INVENTORY_DAYS": null},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 47.2034,"GD_PAYABLES_DAYS": 50.5046,"GD_INVENTORY_DAYS": null}
+		},
+		"4515278": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 24.0226,"GD_PAYABLES_DAYS": 38.8756,"GD_INVENTORY_DAYS": 107.63},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 17.1128,"GD_PAYABLES_DAYS": 17.9039,"GD_INVENTORY_DAYS": 62.6079},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 34.1443,"GD_PAYABLES_DAYS": 3.64188,"GD_INVENTORY_DAYS": 95.0015},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 13.1651,"GD_PAYABLES_DAYS": 5.17793,"GD_INVENTORY_DAYS": 50.0618},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 37.1778,"GD_PAYABLES_DAYS": 19.6771,"GD_INVENTORY_DAYS": 33.9513}
+		},
+		"5458343": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 87.6692,"GD_PAYABLES_DAYS": 92.5638,"GD_INVENTORY_DAYS": 6.92272},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 132.528,"GD_PAYABLES_DAYS": 134.275,"GD_INVENTORY_DAYS": 6.37883},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 112.794,"GD_PAYABLES_DAYS": 116.323,"GD_INVENTORY_DAYS": null},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 102.487,"GD_PAYABLES_DAYS": 52.1812,"GD_INVENTORY_DAYS": null},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 94.0389,"GD_PAYABLES_DAYS": 60.3823,"GD_INVENTORY_DAYS": null}
+		},
+		"5523299": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 42.5949,"GD_PAYABLES_DAYS": 55.5145,"GD_INVENTORY_DAYS": 54.5956},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 43.4175,"GD_PAYABLES_DAYS": 43.3127,"GD_INVENTORY_DAYS": 50.0183},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 30.8618,"GD_PAYABLES_DAYS": 49.2673,"GD_INVENTORY_DAYS": 59.515},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 10.7367,"GD_PAYABLES_DAYS": 13.5254,"GD_INVENTORY_DAYS": 68.5713}
+		},
+		"7688917": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 76.502,"GD_PAYABLES_DAYS": 14.229,"GD_INVENTORY_DAYS": 2.16837},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 94.3913,"GD_PAYABLES_DAYS": 9.99532,"GD_INVENTORY_DAYS": 2.87085},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 111.655,"GD_PAYABLES_DAYS": 21.6312,"GD_INVENTORY_DAYS": 4.91352},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 87.7545,"GD_PAYABLES_DAYS": 17.9493,"GD_INVENTORY_DAYS": 3.01979},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 43.7926,"GD_PAYABLES_DAYS": 8.61211,"GD_INVENTORY_DAYS": 3.91735}
+		},
+		"9559437": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 70.0346,"GD_PAYABLES_DAYS": 110.578,"GD_INVENTORY_DAYS": 15.7764},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 88.3068,"GD_PAYABLES_DAYS": 120.949,"GD_INVENTORY_DAYS": 18.2266},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 149.109,"GD_PAYABLES_DAYS": 192.194,"GD_INVENTORY_DAYS": 27.8054},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 100.014,"GD_PAYABLES_DAYS": 191.056,"GD_INVENTORY_DAYS": 22.8287},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 121.864,"GD_PAYABLES_DAYS": 212.527,"GD_INVENTORY_DAYS": 19.9709}
+		},
+		"9664255": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 72.3555,"GD_PAYABLES_DAYS": 39.724,"GD_INVENTORY_DAYS": null},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 72.7139,"GD_PAYABLES_DAYS": 33.9081,"GD_INVENTORY_DAYS": null},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 66.299,"GD_PAYABLES_DAYS": 26.267,"GD_INVENTORY_DAYS": null},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 63.0455,"GD_PAYABLES_DAYS": 37.0394,"GD_INVENTORY_DAYS": null}
+		},
+		"11791138": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 86.5423,"GD_PAYABLES_DAYS": 23.3396,"GD_INVENTORY_DAYS": 0.789722},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 99.971,"GD_PAYABLES_DAYS": 45.3333,"GD_INVENTORY_DAYS": 0.405863},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 77.1367,"GD_PAYABLES_DAYS": 35.9031,"GD_INVENTORY_DAYS": 0.456558},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 76.4095,"GD_PAYABLES_DAYS": 41.8963,"GD_INVENTORY_DAYS": 0.326532},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 77.3646,"GD_PAYABLES_DAYS": 49.4477,"GD_INVENTORY_DAYS": 0.836325}
+		},
+		"20361300": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 126.128,"GD_PAYABLES_DAYS": 32.6727,"GD_INVENTORY_DAYS": 174.054},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 104.528,"GD_PAYABLES_DAYS": 25.3741,"GD_INVENTORY_DAYS": 212.48},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 137.561,"GD_PAYABLES_DAYS": 26.0147,"GD_INVENTORY_DAYS": 250.01},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 147.973,"GD_PAYABLES_DAYS": 20.4446,"GD_INVENTORY_DAYS": 238.319},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 150.634,"GD_PAYABLES_DAYS": 20.9196,"GD_INVENTORY_DAYS": 212.848}
+		},
+		"21902702": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 107.739,"GD_PAYABLES_DAYS": 485.823,"GD_INVENTORY_DAYS": 102.974},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 115.126,"GD_PAYABLES_DAYS": 223.404,"GD_INVENTORY_DAYS": 154.863},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 133.053,"GD_PAYABLES_DAYS": 179.421,"GD_INVENTORY_DAYS": 192.107},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 23.9907,"GD_PAYABLES_DAYS": 138.302,"GD_INVENTORY_DAYS": 90.1666},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 23.2362,"GD_PAYABLES_DAYS": 157.602,"GD_INVENTORY_DAYS": 93.8434}
+		},
+		"23270929": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 39.9942,"GD_PAYABLES_DAYS": 42.5977,"GD_INVENTORY_DAYS": 142.02},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 44.6834,"GD_PAYABLES_DAYS": 28.2824,"GD_INVENTORY_DAYS": 122.603},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 50.5759,"GD_PAYABLES_DAYS": 36.8285,"GD_INVENTORY_DAYS": 129.432},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 46.8137,"GD_PAYABLES_DAYS": 37.777,"GD_INVENTORY_DAYS": 105.603},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 52.8076,"GD_PAYABLES_DAYS": 40.9399,"GD_INVENTORY_DAYS": 122.652}
+		},
+		"25454761": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 31.4435,"GD_PAYABLES_DAYS": 496.528,"GD_INVENTORY_DAYS": null},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 31.0487,"GD_PAYABLES_DAYS": 472.411,"GD_INVENTORY_DAYS": null},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 31.7217,"GD_PAYABLES_DAYS": 424.831,"GD_INVENTORY_DAYS": null},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 30.451,"GD_PAYABLES_DAYS": 365.68,"GD_INVENTORY_DAYS": null},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 30.3135,"GD_PAYABLES_DAYS": 321.746,"GD_INVENTORY_DAYS": null}
+		},
+		"27229539": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 93.2485,"GD_PAYABLES_DAYS": 26.2652,"GD_INVENTORY_DAYS": 5.21233},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 64.262,"GD_PAYABLES_DAYS": 13.4939,"GD_INVENTORY_DAYS": 4.08456},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 78.2343,"GD_PAYABLES_DAYS": 34.7154,"GD_INVENTORY_DAYS": 3.49165},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 86.6237,"GD_PAYABLES_DAYS": 20.6103,"GD_INVENTORY_DAYS": 2.63726}
+		},
+		"27404807": {
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 73.5085,"GD_PAYABLES_DAYS": 80.9434,"GD_INVENTORY_DAYS": 124.051},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 60.5627,"GD_PAYABLES_DAYS": 70.864,"GD_INVENTORY_DAYS": 178.58},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 49.7953,"GD_PAYABLES_DAYS": 57.0174,"GD_INVENTORY_DAYS": 151.267},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 66.2337,"GD_PAYABLES_DAYS": 79.4852,"GD_INVENTORY_DAYS": 168.935}
+		},
+		"27405376": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 65.9532,"GD_PAYABLES_DAYS": null,"GD_INVENTORY_DAYS": null},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 38.553,"GD_PAYABLES_DAYS": null,"GD_INVENTORY_DAYS": null},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 85.2133,"GD_PAYABLES_DAYS": null,"GD_INVENTORY_DAYS": null},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 30.6037,"GD_PAYABLES_DAYS": null,"GD_INVENTORY_DAYS": null},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 21.9669,"GD_PAYABLES_DAYS": null,"GD_INVENTORY_DAYS": null}
+		},
+		"27812059": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 35.8733,"GD_PAYABLES_DAYS": null,"GD_INVENTORY_DAYS": null},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 41.2146,"GD_PAYABLES_DAYS": null,"GD_INVENTORY_DAYS": null},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 49.9108,"GD_PAYABLES_DAYS": null,"GD_INVENTORY_DAYS": null},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 47.3377,"GD_PAYABLES_DAYS": null,"GD_INVENTORY_DAYS": null},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 45.4167,"GD_PAYABLES_DAYS": null,"GD_INVENTORY_DAYS": null}
+		},
+		"27975636": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 44.2057,"GD_PAYABLES_DAYS": 59.1782,"GD_INVENTORY_DAYS": 1.65261},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 49.0704,"GD_PAYABLES_DAYS": 34.9988,"GD_INVENTORY_DAYS": 0.910584},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 32.5142,"GD_PAYABLES_DAYS": 37.7189,"GD_INVENTORY_DAYS": 0.683068},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 49.8736,"GD_PAYABLES_DAYS": 32.6031,"GD_INVENTORY_DAYS": 0.455017},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 40.8277,"GD_PAYABLES_DAYS": 33.1259,"GD_INVENTORY_DAYS": 0.386665}
+		},
+		"29899157": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 59.179,"GD_PAYABLES_DAYS": 155.852,"GD_INVENTORY_DAYS": 255.74},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 41.453,"GD_PAYABLES_DAYS": 135.827,"GD_INVENTORY_DAYS": 260.845},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 52.759,"GD_PAYABLES_DAYS": 160.876,"GD_INVENTORY_DAYS": 324.877},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 57.0839,"GD_PAYABLES_DAYS": 190.279,"GD_INVENTORY_DAYS": 183.741},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 54.8008,"GD_PAYABLES_DAYS": 172.071,"GD_INVENTORY_DAYS": 152.804}
+		},
+		"32590567": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 69.19,"GD_PAYABLES_DAYS": 73.9359,"GD_INVENTORY_DAYS": null},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 52.9955,"GD_PAYABLES_DAYS": 60.43,"GD_INVENTORY_DAYS": 2.56681},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 35.34,"GD_PAYABLES_DAYS": 27.2697,"GD_INVENTORY_DAYS": 5.39147},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 32.7873,"GD_PAYABLES_DAYS": 27.6923,"GD_INVENTORY_DAYS": 8.62357},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 41.9667,"GD_PAYABLES_DAYS": 41.5984,"GD_INVENTORY_DAYS": 12.5136}
+		},
+		"35518414": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 15.0093,"GD_PAYABLES_DAYS": 2.49593,"GD_INVENTORY_DAYS": 4.30616},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 19.8639,"GD_PAYABLES_DAYS": 6.68622,"GD_INVENTORY_DAYS": 17.1475},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 5.44776,"GD_PAYABLES_DAYS": 12.1984,"GD_INVENTORY_DAYS": null},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 41.8565,"GD_PAYABLES_DAYS": 2.97335,"GD_INVENTORY_DAYS": 82.8093},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 29.3057,"GD_PAYABLES_DAYS": 1.87371,"GD_INVENTORY_DAYS": 41.9151}
+		},
+		"36059869": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 215.071,"GD_PAYABLES_DAYS": 261.363,"GD_INVENTORY_DAYS": 167.816},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 262.628,"GD_PAYABLES_DAYS": 261.51,"GD_INVENTORY_DAYS": 171.164},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 315.712,"GD_PAYABLES_DAYS": 221.657,"GD_INVENTORY_DAYS": 190.06},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 311.249,"GD_PAYABLES_DAYS": 150.902,"GD_INVENTORY_DAYS": 220.499},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 242.454,"GD_PAYABLES_DAYS": 155.849,"GD_INVENTORY_DAYS": 297.23}
+		},
+		"38925325": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 95.2657,"GD_PAYABLES_DAYS": 21.7497,"GD_INVENTORY_DAYS": 2.40654},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 79.1453,"GD_PAYABLES_DAYS": 23.6402,"GD_INVENTORY_DAYS": 3.89462},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 95.9584,"GD_PAYABLES_DAYS": 16.9545,"GD_INVENTORY_DAYS": 5.54476},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 65.2724,"GD_PAYABLES_DAYS": 11.6281,"GD_INVENTORY_DAYS": 5.23895},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 54.1093,"GD_PAYABLES_DAYS": 12.3533,"GD_INVENTORY_DAYS": 4.98447}
+		},
+		"102330095": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 135.06,"GD_PAYABLES_DAYS": 223.333,"GD_INVENTORY_DAYS": 176.652},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 197.369,"GD_PAYABLES_DAYS": 314.441,"GD_INVENTORY_DAYS": 374.624},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 213.155,"GD_PAYABLES_DAYS": 369.268,"GD_INVENTORY_DAYS": 454.541},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 235.831,"GD_PAYABLES_DAYS": 464.174,"GD_INVENTORY_DAYS": 670.162},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 281.397,"GD_PAYABLES_DAYS": 289.414,"GD_INVENTORY_DAYS": 384.685}
+		},
+		"114127724": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 39.75,"GD_PAYABLES_DAYS": 47.2255,"GD_INVENTORY_DAYS": 32.508},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 39.0473,"GD_PAYABLES_DAYS": 42.3591,"GD_INVENTORY_DAYS": 31.717},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 35.1403,"GD_PAYABLES_DAYS": 54.7876,"GD_INVENTORY_DAYS": 32.3608},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 0,"GD_PAYABLES_DAYS": null,"GD_INVENTORY_DAYS": null},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 37.1544,"GD_PAYABLES_DAYS": 51.7981,"GD_INVENTORY_DAYS": 28.4054}
+		},
+		"115908486": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 74.5111,"GD_PAYABLES_DAYS": 39.1509,"GD_INVENTORY_DAYS": 2.19458},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 63.0954,"GD_PAYABLES_DAYS": 35.022,"GD_INVENTORY_DAYS": 4.64779},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 67.5565,"GD_PAYABLES_DAYS": 20.3352,"GD_INVENTORY_DAYS": 4.84384},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 65.5474,"GD_PAYABLES_DAYS": 16.3468,"GD_INVENTORY_DAYS": 4.20071},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 68.627,"GD_PAYABLES_DAYS": 20.1112,"GD_INVENTORY_DAYS": 4.36299}
+		},
+		"140244563": {
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 65.4854,"GD_PAYABLES_DAYS": 51.3363,"GD_INVENTORY_DAYS": 64.5023},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 11.841,"GD_PAYABLES_DAYS": 12.7578,"GD_INVENTORY_DAYS": 11.3926},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 12.5727,"GD_PAYABLES_DAYS": 22.57,"GD_INVENTORY_DAYS": 1.68467}
+		},
+		"214068812": {
+		 "2012": { "year": 2012, "GD_RECEIVABLES_DAYS": 47.5848,"GD_PAYABLES_DAYS": 56.9342,"GD_INVENTORY_DAYS": 17.0213},
+		 "2013": { "year": 2013, "GD_RECEIVABLES_DAYS": 53.5331,"GD_PAYABLES_DAYS": 46.9662,"GD_INVENTORY_DAYS": 8.06496},
+		 "2014": { "year": 2014, "GD_RECEIVABLES_DAYS": 39.7154,"GD_PAYABLES_DAYS": 42.9924,"GD_INVENTORY_DAYS": 11.9697},
+		 "2015": { "year": 2015, "GD_RECEIVABLES_DAYS": 53.8372,"GD_PAYABLES_DAYS": 49.8925,"GD_INVENTORY_DAYS": 10.6622},
+		 "2016": { "year": 2016, "GD_RECEIVABLES_DAYS": 51.1309,"GD_PAYABLES_DAYS": 50.2417,"GD_INVENTORY_DAYS": 12.7227}
+		}
+	}
+
+}
