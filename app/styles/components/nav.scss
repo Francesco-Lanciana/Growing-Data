@@ -1,0 +1,20 @@
+@import "../variables";
+
+.top-bar {
+
+  background-color: $black;
+  display: flex;
+
+  .website-title {
+    color: $title-color;
+    align-items: center;
+    margin: round(($navbar-height - $title-size + 4)/2);
+    font-size: $title-size;
+  }
+
+}
+
+.skinny-bar {
+  height: 4px;
+  background-color: $red;
+}

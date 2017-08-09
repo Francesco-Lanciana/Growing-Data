@@ -22,7 +22,7 @@ class CompanyList extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="company-cell">
         {this.renderCompanies()}
       </div>
     );
