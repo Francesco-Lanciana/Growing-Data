@@ -4,9 +4,9 @@
   "description": "Software Project for Growing Data",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "NODE_ENV=development node server.js",
     "build": "webpack --env production",
-    "prodServe": "webpack --env production && node server.js",
+    "build:serve": "webpack --env production && NODE_ENV=production node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Francesco Lanciana",
@@ -44,6 +44,7 @@
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
     "webpack": "^3.4.1",
+    "webpack-dev-middleware": "^1.12.0",
     "webpack-merge": "^4.1.0"
   }
 }

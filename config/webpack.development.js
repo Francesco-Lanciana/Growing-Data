@@ -17,6 +17,10 @@ const developmentConfig = merge([
   parts.loadStyleSheets({ exlude: /node_modules/ }),
   parts.loadImages(),
   parts.loadFonts(),
+  parts.loadJavaScript({
+    include: PATHS.app,
+    exclude: /(node_modules|bower_components)/,
+  }),
   parts.extractHTML({
     template: path.join(PATHS.app, 'index.template.ejs'),
   }),

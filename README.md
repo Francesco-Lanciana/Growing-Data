@@ -4,11 +4,11 @@ This web-based application creates a simple interface in front of your pre-defin
 
 To run locally, you will need to:
 
-1. Install nodeJS from [https://nodejs.org/](https://nodejs.org/).
+1. Install NodeJS from [https://nodejs.org/](https://nodejs.org/).
 
 2. Open a Command Prompt / Terminal and go to the *top* directory of your repository & type: `npm install` or `yarn install`
 
-3. From the same directory type: `npm run build` to build the project using webpack and then: `npm run start` to serve the built project using Express.
+3. From the same directory type: `npm run start` to serve the project using Express. To build and serve a production version of the application type: `npm run build:serve`. Other commands can be found in the **_package.json_** file.
 
 
 The repository contains the following folders:
@@ -19,7 +19,7 @@ All source files for this web-application are located in this folder.
 
 **_config_**
 
-Contains all webpack configuration for both development and production. These files are in turned called by **_webpack.config.js_**
+Contains all Webpack configuration for both development and production. These files are in turned called by **_webpack.config.js_**
 
 **_data_**
 
