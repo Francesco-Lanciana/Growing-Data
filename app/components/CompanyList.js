@@ -8,12 +8,23 @@ import jsonData from 'data.json';
 class CompanyList extends React.Component {
   constructor(props) {
     super(props);
-    console.log(jsonData);
+  }
+
+  renderCompanies() {
+    let companyNames = [];
+    for (const companyID in jsonData.companies) {
+      if (jsonData.companies.hasOwnProperty(companyID)) {
+        companyNames.push(<Company name={jsonData.companies[companyID].name}/>)
+      }
+    }
+    return companyNames;
   }
 
   render() {
     return (
-      <Company/>
+      <div>
+        {this.renderCompanies()}
+      </div>
     );
   }
 }
