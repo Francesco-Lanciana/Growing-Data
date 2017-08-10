@@ -12,4 +12,10 @@
     align-items: center;
     display: flex;
   }
+
+  > input {
+    width: 30%;
+    height: 10px;
+  }
+
 }

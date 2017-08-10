@@ -2,9 +2,20 @@
 
 .company-name {
   color: $blue;
+  margin: 15px;
 }
 
 .company-selection {
   width: 20px;
+  margin: 15px;
+}
 
+.company-cell {
+  border-bottom: 1px solid $light-grey-border;
+  display: flex;
+}
+
+.company-container {
+  height: 100%;
+  overflow: scroll;
 }

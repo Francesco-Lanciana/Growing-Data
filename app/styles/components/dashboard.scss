@@ -1,0 +1,31 @@
+#main-dashboard-content {
+  display:flex;
+  //flex-wrap:wrap-reverse;
+  height: 88vh;
+}
+
+@media (max-width: 800px) {
+  #main-dashboard-content {
+    flex-direction: column-reverse;
+  }
+}
+
+#main-dashboard-content > * {
+  font-size: 20px;
+  border-radius:7px;
+  margin:5px;
+}
+
+#company-list {
+  order:1;
+  flex:2 1 400px;
+  overflow-y: scroll;
+}
+#metric-list {
+  order:2;
+  flex:1 0 auto;
+}
+#selected-companies-list {
+  order:3;
+  flex:1 1 200px;
+}
