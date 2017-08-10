@@ -25,9 +25,17 @@ export const filterCompanies = (companies, searchText) => {
   let filteredCompanies = companies;
 
   filteredCompanies = filteredCompanies.filter((company) => {
-    const text = company.toLowerCase();
+    const text = company.name.toLowerCase();
     return searchText.length === 0 || text.indexOf(searchText) != -1;
   });
 
   return filteredCompanies;
+}
+
+export const getSelectedCompanies = (companies) => {
+  let filteredCompanies = companies;
+
+  return filteredCompanies.filter((company) => {
+    return company.selected;
+  })
 }

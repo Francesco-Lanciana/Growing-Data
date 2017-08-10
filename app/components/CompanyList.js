@@ -20,7 +20,7 @@ class CompanyList extends React.Component {
     }
     return filteredCompanies.map((company) => {
       return (
-        <Company name={company} key = {company}/>
+        <Company key={company.id} {...company}/>
       );
     });
   }

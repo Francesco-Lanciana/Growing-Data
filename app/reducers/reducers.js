@@ -23,6 +23,18 @@ export const companiesReducer = (state = [], action) => {
         ...state,
         ...action.companies
       ];
+    case 'UPDATE_SELECTION':
+      return state.map((company) => {
+        if (company.id === action.id) {
+          return Object.assign(
+            {},
+            company,
+            {selected: action.selected}
+          );
+        } else {
+          return company;
+        }
+      });
     default:
       return state;
   };

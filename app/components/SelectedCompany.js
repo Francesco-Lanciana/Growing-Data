@@ -5,10 +5,10 @@ class SelectedCompany extends React.Component {
   render() {
     return (
       <div>
-        HEY
+        {this.props.name}
       </div>
     );
-  }
+  };
 }
 
 export default SelectedCompany;
