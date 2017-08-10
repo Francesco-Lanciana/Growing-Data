@@ -27,5 +27,28 @@ export const toggleSelected = (id, selected) => {
     type: 'UPDATE_SELECTION',
     id,
     selected,
-  }
-}
+  };
+};
+
+export const addMetrics = (metricNames) => {
+  let m = metricNames.map((metric) => {
+    return ({
+      name: metric,
+      selected: false,
+      id: uuidv4(),
+    })
+  });
+
+  return {
+    type: 'ADD_METRICS',
+    metrics: m,
+  };
+};
+
+export const toggleSelectedMetrics = (id, selected) => {
+  return {
+    type: 'UPDATE_METRIC_SELECTION',
+    id,
+    selected,
+  };
+};

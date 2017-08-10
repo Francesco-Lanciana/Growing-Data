@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {connect} from 'react-redux';
 import Metric from 'Metric';
 import jsonData from 'data';
 
@@ -9,15 +9,14 @@ class MetricList extends React.Component {
   }
 
   renderCompanies() {
-    let metrics = [];
-    for (const metricID in jsonData.metrics) {
-      if (jsonData.metrics.hasOwnProperty(metricID)) {
-        metrics.push(
-          <Metric name={jsonData.metrics[metricID].name} key = {metricID}/>
+    const {metrics} = this.props;
+    let metricElements = [];
+    for (let i = 0; i < metrics.length; i++) {
+        metricElements.push(
+          <Metric key={metrics[i].id} {...metrics[i]}/>
         )
-      }
     }
-    return metrics;
+    return metricElements;
   }
 
   render() {
@@ -29,4 +28,4 @@ class MetricList extends React.Component {
   }
 }
 
-export default MetricList;
+export default connect((state) => state)(MetricList);

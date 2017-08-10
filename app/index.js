@@ -4,12 +4,13 @@ import {Provider} from 'react-redux';
 
 import Main from './components/Main';
 
-import {addCompanies} from 'App/actions/actions';
+import {addCompanies, addMetrics} from 'App/actions/actions';
 const store = require('App/store/store').configure();
 import * as listingAPI from 'App/api/companyListingAPI';
 import jsonData from 'data';
 
 store.dispatch(addCompanies(listingAPI.extractCompanies(jsonData)));
+store.dispatch(addMetrics(listingAPI.extractMetrics(jsonData)));
 
 function renderApp() {
     ReactDOM.render(

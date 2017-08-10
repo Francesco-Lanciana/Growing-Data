@@ -1,11 +1,11 @@
 import * as redux from 'redux';
 
-import {searchTextReducer, showSelectedReducer, companiesReducer} from 'App/reducers/reducers';
+import {searchTextReducer, metricsReducer, companiesReducer} from 'App/reducers/reducers';
 
 export var configure = (initialState ={}) => {
   const reducer = redux.combineReducers({
     searchText: searchTextReducer,
-    showCompleted: showSelectedReducer,
+    metrics: metricsReducer,
     companies: companiesReducer,
   });
 

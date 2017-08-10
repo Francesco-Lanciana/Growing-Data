@@ -7,15 +7,6 @@ export const searchTextReducer = (state = '', action) => {
   };
 };
 
-export const showSelectedReducer = (state = false, action) => {
-  switch (action.type) {
-    case 'TOGGLE_SHOW_COMPLETED':
-      return !state;
-    default:
-      return state;
-  };
-};
-
 export const companiesReducer = (state = [], action) => {
   switch (action.type) {
     case 'ADD_COMPANIES':
@@ -35,6 +26,30 @@ export const companiesReducer = (state = [], action) => {
           return company;
         }
       });
+    default:
+      return state;
+  };
+};
+
+export const metricsReducer = (state = [], action) => {
+  switch (action.type) {
+    case 'ADD_METRICS':
+      return [
+        ...state,
+        ...action.metrics
+      ];
+      case 'UPDATE_METRIC_SELECTION':
+        return state.map((metric) => {
+          if (metric.id === action.id) {
+            return Object.assign(
+              {},
+              metric,
+              {selected: action.selected}
+            );
+          } else {
+            return metric;
+          }
+        });
     default:
       return state;
   };
