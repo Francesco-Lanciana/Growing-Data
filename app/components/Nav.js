@@ -1,8 +1,8 @@
-var React = require('react');
+import React from 'react';
 
 require('ComponentStyles/nav');
 
-var Nav = () => {
+const Nav = () => {
     return (
       <div>
         <div className="top-bar">
@@ -17,4 +17,4 @@ var Nav = () => {
     );
 };
 
-module.exports = Nav;
+export default Nav;

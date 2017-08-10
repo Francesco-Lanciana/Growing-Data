@@ -4,6 +4,8 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Nav from 'Nav';
 import Dashboard from 'Dashboard';
 import CompanySearch from 'CompanySearch';
+import AnalysisButton from 'AnalysisButton';
+
 
 require('base');
 
@@ -14,6 +16,7 @@ class Main extends React.Component {
             <div>
                 <Nav/>
                 <CompanySearch/>
+                <AnalysisButton/>
                 <Route pattern="/" component={Dashboard}/>
             </div>
         </Router>

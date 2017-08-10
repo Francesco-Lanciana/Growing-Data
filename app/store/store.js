@@ -1,15 +1,18 @@
 import * as redux from 'redux';
+import thunk from 'redux-thunk';
 
-import {searchTextReducer, metricsReducer, companiesReducer} from 'App/reducers/reducers';
+import * as reducers from 'App/reducers/reducers';
 
 export var configure = (initialState ={}) => {
   const reducer = redux.combineReducers({
-    searchText: searchTextReducer,
-    metrics: metricsReducer,
-    companies: companiesReducer,
+    searchText: reducers.searchTextReducer,
+    metrics: reducers.metricsReducer,
+    companies: reducers.companiesReducer,
+    counts: reducers.countReducer,
   });
 
   const store = redux.createStore(reducer, initialState, redux.compose(
+    redux.applyMiddleware(thunk),
     window.devToolsExtension ? window.devToolsExtension() : f => f
   ));
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {toggleSelected} from 'App/actions/actions';
+import {toggleSelectedCompanies} from 'App/actions/actions';
 
 require('ComponentStyles/company');
 
@@ -10,7 +10,7 @@ class Company extends React.Component {
 
     return (
       <div className="company-cell" onClick={() => {
-        dispatch(toggleSelected(id, !selected));
+        dispatch(toggleSelectedCompanies(id, !selected));
       }}>
         <div className="company-selection">
           <input type="checkbox" checked={selected} id="company-selection" name="company-name"/>
