@@ -1,8 +1,8 @@
 import React from 'react';
-import * as d3 from 'd3';
-
+import {connect} from 'react-redux';
 import Company from 'Company';
-import jsonData from 'data';
+
+import {filterCompanies} from 'App/api/companyListingAPI';
 
 require('ComponentStyles/company');
 
@@ -12,15 +12,17 @@ class CompanyList extends React.Component {
   }
 
   renderCompanies() {
-    let companyNames = [];
-    for (const companyID in jsonData.companies) {
-      if (jsonData.companies.hasOwnProperty(companyID)) {
-        companyNames.push(
-          <Company name={jsonData.companies[companyID].name} key = {companyID}/>
-        )
-      }
+    const {companies, searchText} = this.props;
+    let filteredCompanies = filterCompanies(companies, searchText);
+
+    if (filteredCompanies.length === 0) {
+      return <p className="company-listing-message">There are no matches</p>
     }
-    return companyNames;
+    return filteredCompanies.map((company) => {
+      return (
+        <Company name={company} key = {company}/>
+      );
+    });
   }
 
   render() {
@@ -32,4 +34,4 @@ class CompanyList extends React.Component {
   }
 }
 
-export default CompanyList;
+export default connect((state) => state)(CompanyList);

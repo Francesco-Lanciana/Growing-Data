@@ -15,3 +15,15 @@ export const showSelectedReducer = (state = false, action) => {
       return state;
   };
 };
+
+export const companiesReducer = (state = [], action) => {
+  switch (action.type) {
+    case 'ADD_COMPANIES':
+      return [
+        ...state,
+        ...action.companies
+      ];
+    default:
+      return state;
+  };
+};
