@@ -1,16 +1,16 @@
-#main-dashboard-content {
+#main-screen-content {
   display:flex;
   //flex-wrap:wrap-reverse;
   height: 88vh;
 }
 
 @media (max-width: 800px) {
-  #main-dashboard-content {
+  #main-screen-content {
     flex-direction: column-reverse;
   }
 }
 
-#main-dashboard-content > * {
+#main-screen-content > * {
   font-size: 20px;
   border-radius:7px;
   margin:5px;

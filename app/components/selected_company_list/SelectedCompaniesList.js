@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 
 import {getSelectedCompanies} from 'App/api/companyListingAPI';
-import SelectedCompany from 'SelectedCompany';
+import SelectedCompany from './SelectedCompany';
 
 class SelectedCompanyList extends React.Component {
   constructor(props) {

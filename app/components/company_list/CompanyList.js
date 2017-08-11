@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import Company from 'Company';
+import Company from './Company';
 
 import {filterCompanies} from 'App/api/companyListingAPI';
 

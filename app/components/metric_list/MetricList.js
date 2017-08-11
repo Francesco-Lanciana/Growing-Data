@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import Metric from 'Metric';
+import Metric from './Metric';
 import jsonData from 'data';
 
 class MetricList extends React.Component {

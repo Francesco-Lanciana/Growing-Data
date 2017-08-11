@@ -19,6 +19,7 @@ exports.config = ({ entry, buildPath }) => ({
     extensions: [".js", ".json", ".scss", ".ejs"],
     alias: {
       App: path.resolve(__dirname, '../app/'),
+      Components: path.resolve(__dirname, '../app/components/'),
       ComponentStyles: path.resolve(__dirname, '../app/styles/components/'),
     }
   },
