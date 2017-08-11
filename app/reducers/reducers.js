@@ -1,7 +1,7 @@
 // Initial states
-var initialCounts = {
-  metricCount: 0,
-  companyCount: 0,
+var initialSelections = {
+  metrics: [],
+  companies: [],
 };
 
 
@@ -63,24 +63,40 @@ export const metricsReducer = (state = [], action) => {
   };
 };
 
-export const countReducer = (state = initialCounts, action) => {
+export const selectionReducer = (state = initialSelections, action) => {
   switch (action.type) {
-    case 'UPDATE_METRIC_COUNT':
-      let mCount = state.metricCount;
-
-      return Object.assign(
-        {},
-        state,
-        {metricCount: mCount + action.countUpdate}
-      );
-    case 'UPDATE_COMPANY_COUNT':
-      let cCount = state.companyCount;
-
-      return Object.assign(
-        {},
-        state,
-        {companyCount: cCount + action.countUpdate}
-      );
+    case 'ADD_SELECTED_METRIC':
+      return {
+        metrics: [
+          ...state.metrics,
+          action.selection,
+        ],
+        companies: state.companies,
+      };
+    case 'ADD_SELECTED_COMPANY':
+      return {
+        metrics: state.metrics,
+        companies: [
+          ...state.companies,
+          action.selection,
+        ],
+      };
+    case 'REMOVE_SELECTED_METRIC':
+      let filteredMetrics = state.metrics.filter((metric) => {
+        return metric.id != action.id;
+      });
+      return {
+        metrics: filteredMetrics,
+        companies: state.companies,
+      };
+    case 'REMOVE_SELECTED_COMPANY':
+      let filteredCompanies = state.companies.filter((company) => {
+        return company.id != action.id;
+      });
+      return {
+        metrics: state.metrics,
+        companies: filteredCompanies,
+      };
     default:
       return state;
   };

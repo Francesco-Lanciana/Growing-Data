@@ -7,12 +7,12 @@ export const setSearchText = (searchText) => {
   };
 };
 
-export const addCompanies = (companyNames) => {
-  let c = companyNames.map((company) => {
+export const addCompanies = (companies) => {
+  let c = companies.map((company) => {
     return ({
-      name: company,
+      name: company.name,
       selected: false,
-      id: uuidv4(),
+      id: company.id,
     });
   });
 
@@ -22,9 +22,18 @@ export const addCompanies = (companyNames) => {
   };
 };
 
-export const toggleSelectedCompanies = (id, selected) => {
+export const toggleSelectedCompanies = (name, id, selected) => {
   return dispatch => {
-    dispatch(updateNumberOfSelections('UPDATE_COMPANY_COUNT', selected));
+
+    if (selected) {
+      dispatch(addSelection('ADD_SELECTED_COMPANY', {
+        name,
+        id,
+      }));
+    } else {
+      dispatch(removeSelection('REMOVE_SELECTED_COMPANY', id));
+    }
+
     dispatch(updateSelectedCompanies(id, selected));
   };
 };
@@ -52,10 +61,17 @@ export const addMetrics = (metricNames) => {
   };
 };
 
-export const toggleSelectedMetrics = (id, selected) => {
+export const toggleSelectedMetrics = (name, id, selected) => {
   return dispatch => {
 
-    dispatch(updateNumberOfSelections('UPDATE_METRIC_COUNT', selected));
+    if (selected) {
+      dispatch(addSelection('ADD_SELECTED_METRIC', {
+        name,
+        id,
+      }));
+    } else {
+      dispatch(removeSelection('REMOVE_SELECTED_METRIC', id));
+    }
 
     dispatch(updateSelectedMetrics(id, selected));
   };
@@ -69,10 +85,16 @@ export const updateSelectedMetrics = (id, selected) => {
   };
 }
 
-export const updateNumberOfSelections = (type, isSelected) => {
-  const countUpdate = isSelected ? 1 : -1;
+export const addSelection = (type, selection) => {
   return {
     type,
-    countUpdate,
+    selection,
+  }
+}
+
+export const removeSelection = (type, id) => {
+  return {
+    type,
+    id,
   }
 }

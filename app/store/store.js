@@ -8,7 +8,7 @@ export var configure = (initialState ={}) => {
     searchText: reducers.searchTextReducer,
     metrics: reducers.metricsReducer,
     companies: reducers.companiesReducer,
-    counts: reducers.countReducer,
+    selections: reducers.selectionReducer,
   });
 
   const store = redux.createStore(reducer, initialState, redux.compose(

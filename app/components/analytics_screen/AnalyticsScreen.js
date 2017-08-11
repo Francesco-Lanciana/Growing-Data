@@ -1,14 +1,26 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import LineGraph from './LineGraph';
 
+import * as listingAPI from 'App/api/companyListingAPI';
+import jsonData from 'data';
 
 class AnalyticsScreen extends React.Component {
   render() {
+    const {selectedCompanies, selectedMetrics} = this.props;
+    let filteredFilings = listingAPI.filterFilings(jsonData.filings, selectedCompanies);
+
     return (
-      <div id="main-screen-content">
-        "Analytics screen"
+      <div>
+        <LineGraph filings={filteredFilings} metrics={selectedMetrics}/>
       </div>
     );
   }
 }
 
-export default AnalyticsScreen;
+export default connect((state) => {
+  return {
+    selectedCompanies: state.selections.companies,
+    selectedMetrics: state.selections.metrics,
+  };
+})(AnalyticsScreen);

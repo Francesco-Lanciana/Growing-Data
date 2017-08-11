@@ -1,10 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 import AnalyticsScreen from 'Components/analytics_screen/AnalyticsScreen';
 
@@ -14,18 +10,20 @@ class AnalysisButton extends React.Component {
   }
 
   renderButtonText() {
-    const {counts} = this.props;
+    const {selections} = this.props;
+    let metricCount = selections.metrics.length;
+    let companyCount = selections.companies.length;
     let buttonText = 'Analyze company';
-    if (counts.metricCount === 0 && counts.companyCount === 0) {
+    if (metricCount === 0 && companyCount === 0) {
       buttonText = 'Make selection';
     }
-    else if (counts.metricCount > 0 && counts.companyCount === 0) {
+    else if (metricCount > 0 && companyCount === 0) {
       buttonText = 'Select companies';
     }
-    else if (counts.metricCount === 0 && counts.companyCount > 0) {
+    else if (metricCount === 0 && companyCount > 0) {
       buttonText = 'Select metrics';
     }
-    else if (counts.metricCount > 0 && counts.companyCount > 1) {
+    else if (metricCount > 0 && companyCount > 1) {
       buttonText = 'Analyze companies';
     }
     return buttonText;
@@ -33,16 +31,12 @@ class AnalysisButton extends React.Component {
 
   render() {
     return (
-      <Router>
-        <div>
-          <Link to="/analytics">
-            <button className="button hollow">{this.renderButtonText()}</button>
-          </Link>
+      <div>
+        <Link to="/analytics">
+          <button className="button hollow">{this.renderButtonText()}</button>
+        </Link>
 
-          <Route path="/analytics" component={AnalyticsScreen}/>
-        </div>
-
-      </Router>
+      </div>
     );
   }
 }

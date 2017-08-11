@@ -11,7 +11,7 @@ class Metric extends React.Component {
 
     return (
       <div className={metricClassName} onClick={() => {
-        dispatch(toggleSelectedMetrics(id, !selected));
+        dispatch(toggleSelectedMetrics(name, id, !selected));
       }}>
         {name}
       </div>

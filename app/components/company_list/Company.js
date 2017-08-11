@@ -10,10 +10,10 @@ class Company extends React.Component {
 
     return (
       <div className="company-cell" onClick={() => {
-        dispatch(toggleSelectedCompanies(id, !selected));
+        dispatch(toggleSelectedCompanies(name, id, !selected));
       }}>
         <div className="company-selection">
-          <input type="checkbox" checked={selected} id="company-selection" name="company-name"/>
+          <input type="checkbox" checked={selected} id="company-selection" name="company-name" onChange={() => ''}/>
           <label htmlFor="company-selection"></label>
         </div>
         <div className="company-name">
