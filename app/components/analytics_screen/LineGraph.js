@@ -1,6 +1,14 @@
 import React from 'react';
 import * as d3 from 'd3';
 
+/*
+TODO: Fix the data formats... they make me sad.
+      Allow multiple metrics to be displayed
+      Allow multiple companies to be displayed
+      Allow multiple companies and metrics to be displayed
+      Restructure code so as to not offend the gods
+*/
+
 class LineGraph extends React.Component {
   constructor(props) {
     super(props);
@@ -19,6 +27,14 @@ class LineGraph extends React.Component {
 
     const {filings, metrics} = this.props;
 
+    let metricCodes = metrics.map(function(d) {
+        return d["id"];
+    });
+
+    let metricNames = metrics.map(function(d) {
+        return d["name"];
+    });
+
     const node = d3.select("svg"),
           margin = {top: 20, right: 20, bottom: 30, left: 40},
           width = node.attr("width") - margin.left - margin.right,
@@ -36,8 +52,8 @@ class LineGraph extends React.Component {
     let parseTime = d3.timeParse("%Y");
 
    	var line = d3.line()
-      .x(function(d) { return x(d.year); })
-      .y(function(d) { return y(d['GD_RECEIVABLES_DAYS']); });
+      .x(function(d) { return x(d.yearFormatted); })
+      .y(function(d) { return y(d[metricCodes[0]]); });
 
     let companyFilingData = [];
 
@@ -55,15 +71,15 @@ class LineGraph extends React.Component {
     }
 
 	  companyFilingData.forEach(function(d) {
-      d.year = parseTime(d['year']);
-      d.metric = d['GD_RECEIVABLES_DAYS'];
+      d.yearFormatted = parseTime(d['year']);
+      d.metric = d[metricCodes[0]];
 	  });
 
     // Sort in ascending year order
     companyFilingData = companyFilingData.sort((a, b) => (a.year - b.year));
 
     // Sets the domain (range) to be from the minimum to maximum year/metric
-	  x.domain(d3.extent(companyFilingData, function(d) { return d.year; }));
+	  x.domain(d3.extent(companyFilingData, function(d) { return d.yearFormatted; }));
 	  y.domain(d3.extent(companyFilingData, function(d) { return d.metric; }));
 
 	  g.append("g")
@@ -80,7 +96,7 @@ class LineGraph extends React.Component {
       .attr("y", 6)
       .attr("dy", "0.71em")
       .attr("text-anchor", "end")
-      .text("Receivables Days");
+      .text(metricNames[0]);
 
 	  g.append("path")
       .datum(companyFilingData)

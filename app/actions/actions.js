@@ -46,12 +46,12 @@ export const updateSelectedCompanies = (id, selected) => {
   };
 }
 
-export const addMetrics = (metricNames) => {
-  let m = metricNames.map((metric) => {
+export const addMetrics = (metrics) => {
+  let m = metrics.map((metric) => {
     return ({
-      name: metric,
+      name: metric.name,
       selected: false,
-      id: uuidv4(),
+      id: metric.id,
     })
   });
 

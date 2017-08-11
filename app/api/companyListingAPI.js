@@ -17,7 +17,10 @@ export const extractMetrics = (data) => {
   let metrics = [];
   for (const metricID in data.metrics) {
     if (data.metrics.hasOwnProperty(metricID)) {
-      metrics.push(data.metrics[metricID].name);
+      metrics.push({
+        name: data.metrics[metricID].name,
+        id: metricID
+      });
     }
   }
   return metrics;

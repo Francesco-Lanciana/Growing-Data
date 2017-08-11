@@ -247,7 +247,7 @@
 	"metrics": {
 		"GD_RECEIVABLES_DAYS": { "name": "Receivables Days" },
 		"GD_INVENTORY_DAYS": { "name": "Inventory Days" },
-		"GD_PAYAABLES_DAYS": { "name": "Payables Days" }
+		"GD_PAYABLES_DAYS": { "name": "Payables Days" }
 	},
 	"suppliers": {
 		"256654" : {
