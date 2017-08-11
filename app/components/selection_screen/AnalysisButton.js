@@ -1,5 +1,12 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+
+import AnalyticsScreen from 'Components/analytics_screen/AnalyticsScreen';
 
 class AnalysisButton extends React.Component {
   constructor(props) {
@@ -26,9 +33,16 @@ class AnalysisButton extends React.Component {
 
   render() {
     return (
-      <div>
-        <button className="button hollow">{this.renderButtonText()}</button>
-      </div>
+      <Router>
+        <div>
+          <Link to="/analytics">
+            <button className="button hollow">{this.renderButtonText()}</button>
+          </Link>
+
+          <Route path="/analytics" component={AnalyticsScreen}/>
+        </div>
+
+      </Router>
     );
   }
 }
