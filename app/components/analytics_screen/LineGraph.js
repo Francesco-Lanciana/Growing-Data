@@ -1,6 +1,8 @@
 import React from 'react';
 import * as d3 from 'd3';
 
+require('ComponentStyles/line-graph');
+
 /*
 TODO: Fix the data formats... they make me sad.
       Allow multiple metrics to be displayed
@@ -52,42 +54,51 @@ class LineGraph extends React.Component {
     let parseTime = d3.timeParse("%Y");
 
    	var line = d3.line()
-      .x(function(d) { return x(d.yearFormatted); })
-      .y(function(d) { return y(d[metricCodes[0]]); });
+      .x((d) => {
+        return x(d.yearFormatted);
+      })
+      .y((d) => {
+        return y(d.metric);
+      });
 
-    let companyFilingData = [];
-
-    for (let id in filings) {
-      if (filings.hasOwnProperty(id)) {
-        let filing = filings[id];
-
-        for (let year in filing) {
-          if (filing.hasOwnProperty(year)) {
-            companyFilingData.push(filing[year]);
-          }
-        }
-
-      }
-    }
-
-	  companyFilingData.forEach(function(d) {
-      d.yearFormatted = parseTime(d['year']);
-      d.metric = d[metricCodes[0]];
+	  filings.forEach((filing) => {
+      filing.forEach((d) => {
+        d.yearFormatted = parseTime(d['year']);
+        d.metric = d[metricCodes[0]];
+      });
 	  });
 
     // Sort in ascending year order
-    companyFilingData = companyFilingData.sort((a, b) => (a.year - b.year));
+    filings.forEach((filing) => {
+      filing = filing.sort((a, b) => (a.year - b.year));
+    });
+
+
+    let xDomain = {min: parseTime('2300'), max: parseTime('1800')};
+    let yDomain = {min: 100000, max: 0};
+    let temp1, temp2;
+    filings.forEach((filing) => {
+      [temp1, temp2] = d3.extent(filing, (d) => d.yearFormatted);
+      xDomain.min = d3.min([xDomain.min, temp1]);
+      xDomain.max = d3.max([xDomain.max, temp2]);
+
+      [temp1, temp2] = d3.extent(filing, (d) => d.metric);
+      yDomain.min = d3.min([yDomain.min, temp1]);
+      yDomain.max = d3.max([yDomain.max, temp2]);
+    });
 
     // Sets the domain (range) to be from the minimum to maximum year/metric
-	  x.domain(d3.extent(companyFilingData, function(d) { return d.yearFormatted; }));
-	  y.domain(d3.extent(companyFilingData, function(d) { return d.metric; }));
+    x.domain([xDomain.min, xDomain.max]);
+    y.domain([yDomain.min, yDomain.max]);
 
+    // Create x-axis
 	  g.append("g")
-      .attr("transform", "translate(0," + height + ")")
+      .attr("transform", `translate(0, ${height})`)
       .call(d3.axisBottom(x).ticks(4))
       .select(".domain")
       .remove();
 
+    // Create y-axis
 	  g.append("g")
       .call(d3.axisLeft(y))
       .append("text")
@@ -98,14 +109,25 @@ class LineGraph extends React.Component {
       .attr("text-anchor", "end")
       .text(metricNames[0]);
 
-	  g.append("path")
-      .datum(companyFilingData)
-      .attr("fill", "none")
-      .attr("stroke", "steelblue")
-      .attr("stroke-linejoin", "round")
-      .attr("stroke-linecap", "round")
-      .attr("stroke-width", 1.5)
-      .attr("d", line);
+    // g.selectAll("path")
+    //   .data(companyFilingData)
+    //   .enter().append("path")
+    //   .attr("class", "line")
+    //   .attr("d", line);
+
+
+    for (let i = 0; i < filings.length; i++) {
+      g.append("path")
+        .attr("d", line(filings[i]))
+        .attr("class", "line");
+        //.attr("d", line(companyFilingData[i]));
+    }
+
+    //Styling and creating the line
+	  // g.append("path")
+    //   .datum(companyFilingData)
+    //   .attr("class", "line")
+    //   .attr("d", line(companyFilingData));
 
   }
 

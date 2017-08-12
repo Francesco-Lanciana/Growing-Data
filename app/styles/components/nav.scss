@@ -10,9 +10,16 @@
     align-items: center;
     margin: round(($navbar-height - $title-size + 4)/2);
     font-size: $title-size;
+
+  }
+
+  a {
+    text-decoration: none;
   }
 
 }
+
+
 
 .skinny-bar {
   height: 4px;

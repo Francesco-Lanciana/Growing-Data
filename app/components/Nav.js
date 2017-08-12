@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 require('ComponentStyles/nav');
 
@@ -7,9 +8,11 @@ const Nav = () => {
       <div>
         <div className="top-bar">
           <div className="top-bar-left">
-            <div className="website-title">
-              Company Metrics
-            </div>
+            <Link to="/">
+              <div className="website-title">
+                Company Metrics
+              </div>
+            </Link>
           </div>
         </div>
         <div className="skinny-bar"></div>

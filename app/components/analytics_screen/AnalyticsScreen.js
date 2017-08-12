@@ -9,10 +9,10 @@ class AnalyticsScreen extends React.Component {
   render() {
     const {selectedCompanies, selectedMetrics} = this.props;
     let filteredFilings = listingAPI.filterFilings(jsonData.filings, selectedCompanies);
-
+    let convertedFiling = listingAPI.convertFilingData(filteredFilings);
     return (
       <div>
-        <LineGraph filings={filteredFilings} metrics={selectedMetrics}/>
+        <LineGraph filings={convertedFiling} metrics={selectedMetrics}/>
       </div>
     );
   }

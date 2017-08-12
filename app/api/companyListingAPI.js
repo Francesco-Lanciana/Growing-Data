@@ -68,3 +68,25 @@ export const getSelectedCompanies = (companies) => {
     return company.selected;
   })
 }
+
+// Convert filings to array of filings
+export const convertFilingData = (filingData) => {
+  let companyFilingData = [];
+
+  for (let id in filingData) {
+    if (filingData.hasOwnProperty(id)) {
+      let filing = filingData[id];
+
+      let fileArray = [];
+
+      for (let year in filing) {
+        if (filing.hasOwnProperty(year)) {
+          fileArray.push(filing[year]);
+        }
+      }
+
+      companyFilingData.push(fileArray);
+    }
+  }
+  return companyFilingData;
+}
