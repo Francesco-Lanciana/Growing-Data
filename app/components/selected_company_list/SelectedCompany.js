@@ -1,14 +1,10 @@
 import React from 'react';
 
 
-class SelectedCompany extends React.Component {
-  render() {
-    return (
-      <div>
-        {this.props.name}
-      </div>
-    );
-  };
-}
+const SelectedCompany = (props) => (
+  <div className="selected-company">
+    {props.name}
+  </div>
+);
 
 export default SelectedCompany;

@@ -1,16 +1,12 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import Company from './Company';
 
+import Company from './Company';
+import List from './List';
 import {filterCompanies} from 'App/api/companyListingAPI';
 
-require('ComponentStyles/company');
 
 class CompanyList extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   renderCompanies() {
     const {companies, searchText} = this.props;
     let filteredCompanies = filterCompanies(companies, searchText);
@@ -27,9 +23,9 @@ class CompanyList extends React.Component {
 
   render() {
     return (
-      <div className="company-container">
+      <List>
         {this.renderCompanies()}
-      </div>
+      </List>
     );
   }
 }
