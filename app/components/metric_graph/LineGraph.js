@@ -74,8 +74,12 @@ class LineGraph extends React.Component {
 
     let extent = this.getDataExtent(data, parseTime);
 
+    /* TODO: colorScale's domain should be between 0 and the longest set of
+      data, not just the length of the first set.
+    */
     let xScale = d3.scaleTime().domain([extent.x[0], extent.x[1]]).rangeRound([0, width - 50]),
-        yScale = d3.scaleLinear().domain([extent.y[0], extent.y[1]]).rangeRound([height, 0]);
+        yScale = d3.scaleLinear().domain([extent.y[0], extent.y[1]]).rangeRound([height, 0]),
+        colorScale = d3.scaleLinear().domain([0, data[0].length]).range(["red", "green"]);
 
     // Remove previouse graph if there was one.
     node.selectAll("g").remove();
@@ -129,7 +133,8 @@ class LineGraph extends React.Component {
 
       g.append("path")
         .attr("d", line(data[i]))
-        .attr("class", "line");
+        .attr("class", "line")
+        .attr("stroke", colorScale(i*2));
     }
 
     // Create text at the end of each line
@@ -146,6 +151,7 @@ class LineGraph extends React.Component {
       .attr("dy", "0.35em")
       .attr("text-anchor", "end")
       .style("font", "12px sans-serif")
+      .style("fill", (d,i) => colorScale(i*2+1))
       .text((d, i) => dataLabels.names[i]);
 
     g.selectAll('text.labels')
