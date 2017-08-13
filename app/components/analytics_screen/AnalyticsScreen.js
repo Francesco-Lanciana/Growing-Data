@@ -24,11 +24,10 @@ class AnalyticsScreen extends React.Component {
   }
 
   render() {
-    console.log("?????");
     return (
       <div className="main-screen-content">
         <div>
-          <MetricLineGraph size={[this.state.screenWidth * 0.7, this.state.screenHeight / 2]}/>
+          <MetricLineGraph size={[this.state.screenWidth * 0.95, this.state.screenHeight / 2]}/>
         </div>
         <div className="company-list">
           <CompanyList/>

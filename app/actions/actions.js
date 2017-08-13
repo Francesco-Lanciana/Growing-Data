@@ -64,16 +64,20 @@ export const addMetrics = (metrics) => {
 export const toggleSelectedMetrics = (name, id, selected) => {
   return dispatch => {
 
+    // Metric reducer
+    dispatch(deselectAllMetrics());
+    dispatch(updateSelectedMetrics(id, selected));
+
+    // Selection reducer
     if (selected) {
-      dispatch(addSelection('ADD_SELECTED_METRIC', {
+      dispatch(addSelection('SELECT_METRIC', {
         name,
         id,
       }));
     } else {
-      dispatch(removeSelection('REMOVE_SELECTED_METRIC', id));
+      dispatch(deselectMetric());
     }
 
-    dispatch(updateSelectedMetrics(id, selected));
   };
 };
 
@@ -89,12 +93,24 @@ export const addSelection = (type, selection) => {
   return {
     type,
     selection,
-  }
-}
+  };
+};
+
+export const deselectMetric = () => {
+  return {
+    type: 'DESELECT_METRIC'
+  };
+};
+
+export const deselectAllMetrics = () => {
+  return {
+    type: 'DESELECT_ALL_METRICS'
+  };
+};
 
 export const removeSelection = (type, id) => {
   return {
     type,
     id,
-  }
-}
+  };
+};

@@ -43,7 +43,7 @@ export const filterFilings = (filings, companies) => {
 
   for (let i = 0; i < companies.length; i++) {
     let id = companies[i].id;
-    filteredFilings[id] = filings[id];
+    filteredFilings[companies[i].name] = filings[id];
   }
 
   return filteredFilings;

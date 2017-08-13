@@ -6,7 +6,7 @@ require('ComponentStyles/line-graph');
 /*
 TODO: Fix the data formats... they make me sad.
       Allow multiple companies to be displayed
-      Allow multiple companies and metrics to be displayed
+      Allow multiple companies and dataType to be displayed
       Restructure code so as to not offend the gods
 */
 
@@ -17,53 +17,19 @@ class LineGraph extends React.Component {
   }
 
   componentDidMount() {
-    console.log("DID MOUNT");
     this.createLineGraph();
   }
 
   componentDidUpdate() {
-    console.log("DID UPDATE");
     this.createLineGraph();
   }
 
-  createLineGraph() {
-
-    const {filings, metrics} = this.props;
-
-    let metricCodes = metrics.map(function(d) {
-        return d["id"];
-    });
-
-    let metricNames = metrics.map(function(d) {
-        return d["name"];
-    });
-
-    const node = d3.select("svg"),
-          margin = {top: 20, right: 20, bottom: 30, left: 40},
-          width = node.attr("width") - margin.left - margin.right,
-          height = node.attr("height") - margin.top - margin.bottom,
-          parseTime = d3.timeParse("%Y");
-
-    // Extract data of interest for plotting
-    filings.forEach((filing) => {
-      filing.forEach((d) => {
-        d.yearFormatted = parseTime(d['year']);
-        d.metric = d[metricCodes[0]];
-      });
-	  });
-
-    // Sort in ascending year order
-    filings.forEach((filing) => {
-      filing = filing.sort((a, b) => (a.year - b.year));
-    });
-
-    console.log(filings);
-
+  getDataExtent(data, parseTime) {
     //Find the extent of data over all data sets
     let xDomain = {min: parseTime('2300'), max: parseTime('1800')};
     let yDomain = {min: 100000, max: 0};
     let temp1, temp2;
-    filings.forEach((filing) => {
+    data.forEach((filing) => {
       [temp1, temp2] = d3.extent(filing, (d) => d.yearFormatted);
       xDomain.min = d3.min([xDomain.min, temp1]);
       xDomain.max = d3.max([xDomain.max, temp2]);
@@ -73,8 +39,43 @@ class LineGraph extends React.Component {
       yDomain.max = d3.max([yDomain.max, temp2]);
     });
 
-    let xScale = d3.scaleTime().domain([xDomain.min, xDomain.max]).rangeRound([0, width]),
-        yScale = d3.scaleLinear().domain([yDomain.min, yDomain.max]).rangeRound([height, 0]);
+    return {
+      x: [xDomain.min, xDomain.max],
+      y: [yDomain.min, yDomain.max],
+    };
+  }
+
+  createLineGraph() {
+
+    const {data, dataLabels} = this.props;
+
+    // Extract metric code and name
+    let metricCode = dataLabels.dataType.id;
+    let metricName = dataLabels.dataType.name;
+
+    const node = d3.select("svg"),
+          margin = {top: 20, right: 20, bottom: 30, left: 40},
+          width = node.attr("width") - margin.left - margin.right,
+          height = node.attr("height") - margin.top - margin.bottom,
+          parseTime = d3.timeParse("%Y");
+
+    // Extract data of interest for plotting
+    data.forEach((filing) => {
+      filing.forEach((d) => {
+        d.yearFormatted = parseTime(d['year']);
+        d.metric = d[metricCode];
+      });
+	  });
+
+    // Sort in ascending year order
+    data.forEach((filing) => {
+      filing = filing.sort((a, b) => (a.year - b.year));
+    });
+
+    let extent = this.getDataExtent(data, parseTime);
+
+    let xScale = d3.scaleTime().domain([extent.x[0], extent.x[1]]).rangeRound([0, width - 50]),
+        yScale = d3.scaleLinear().domain([extent.y[0], extent.y[1]]).rangeRound([height, 0]);
 
     // Remove previouse graph if there was one.
     node.selectAll("g").remove();
@@ -112,33 +113,44 @@ class LineGraph extends React.Component {
       .attr("y", 6)
       .attr("dy", "0.71em")
       .attr("text-anchor", "end")
-      .text(metricNames[0]);
+      .text(metricName);
 
 
-    // Create circles at each data point
-    for (let i = 0; i < filings.length; i++) {
+    // Create circles at each data point, as well as the lines through them
+    for (let i = 0; i < data.length; i++) {
       g.selectAll(`circle.c${i}`)
-        .data(filings[i])
+        .data(data[i])
         .enter()
         .append("circle")
         .attr("class", `c${i}`)
         .attr("r", 3)
-        .attr("cx", (d) => {
-          console.log(xScale(d.yearFormatted));
-          return xScale(d.yearFormatted)
-        })
-        .attr("cy", (d) => {
-          console.log(yScale(d.metric));
-          return yScale(d.metric)
-        });
-    }
+        .attr("cx", (d) => xScale(d.yearFormatted))
+        .attr("cy", (d) => yScale(d.metric));
 
-    // Create lines for each data set
-    for (let i = 0; i < filings.length; i++) {
       g.append("path")
-        .attr("d", line(filings[i]))
+        .attr("d", line(data[i]))
         .attr("class", "line");
     }
+
+    // Create text at the end of each line
+    g.selectAll('text.labels')
+      .data(data)
+      .enter()
+      .append("text")
+      .attr("transform", (d, i) => {
+        let x = (xScale(d[d.length - 2].yearFormatted) + xScale(d[d.length - 1].yearFormatted))/2;
+        let y = (yScale(d[d.length - 2].metric) + yScale(d[d.length - 1].metric))/2;
+        return `translate(${x}, ${y})`;
+      })
+      .attr("y", -4)
+      .attr("dy", "0.35em")
+      .attr("text-anchor", "end")
+      .style("font", "12px sans-serif")
+      .text((d, i) => dataLabels.names[i]);
+
+    g.selectAll('text.labels')
+      .each()
+
 
   }
 

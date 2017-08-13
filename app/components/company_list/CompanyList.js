@@ -14,6 +14,7 @@ class CompanyList extends React.Component {
     if (filteredCompanies.length === 0) {
       return <p className="company-listing-message">There are no matches</p>
     }
+    
     return filteredCompanies.map((company) => {
       return (
         <Company key={company.id} {...company}/>

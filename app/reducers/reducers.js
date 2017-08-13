@@ -1,6 +1,6 @@
 // Initial states
 var initialSelections = {
-  metrics: [],
+  metric: {},
   companies: [],
 };
 
@@ -58,6 +58,8 @@ export const metricsReducer = (state = [], action) => {
           return metric;
         }
       });
+    case 'DESELECT_ALL_METRICS':
+      state.forEach((metric) => metric.selected = false);
     default:
       return state;
   };
@@ -65,28 +67,22 @@ export const metricsReducer = (state = [], action) => {
 
 export const selectionReducer = (state = initialSelections, action) => {
   switch (action.type) {
-    case 'ADD_SELECTED_METRIC':
+    case 'SELECT_METRIC':
       return {
-        metrics: [
-          ...state.metrics,
-          action.selection,
-        ],
+        metric: action.selection,
         companies: state.companies,
       };
     case 'ADD_SELECTED_COMPANY':
       return {
-        metrics: state.metrics,
+        metric: state.metric,
         companies: [
           ...state.companies,
           action.selection,
         ],
       };
-    case 'REMOVE_SELECTED_METRIC':
-      let filteredMetrics = state.metrics.filter((metric) => {
-        return metric.id != action.id;
-      });
+    case 'DESELECT_METRIC':
       return {
-        metrics: filteredMetrics,
+        metric: {},
         companies: state.companies,
       };
     case 'REMOVE_SELECTED_COMPANY':
@@ -94,7 +90,7 @@ export const selectionReducer = (state = initialSelections, action) => {
         return company.id != action.id;
       });
       return {
-        metrics: state.metrics,
+        metric: state.metric,
         companies: filteredCompanies,
       };
     default:

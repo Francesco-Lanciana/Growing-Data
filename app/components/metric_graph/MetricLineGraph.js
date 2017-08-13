@@ -11,13 +11,21 @@ BUG: list on screen creates double lines
 
 class MetricLineGraph extends React.Component {
   render() {
-    const {selectedCompanies, selectedMetrics, size} = this.props;
+    const {selectedCompanies, selectedMetric, size} = this.props;
+
+    // Extract companies being plotted and the metric of focus
+    let companyNames = selectedCompanies.map((company) => company.name);
+    let dataLabels = {names: companyNames, dataType: selectedMetric};
+
+    /* Extract filings corresponding to companies of interest and convert the
+       data type to an array or array of arrays composed of data objects.
+    */
     let filteredFilings = listingAPI.filterFilings(jsonData.filings, selectedCompanies);
     let convertedFiling = listingAPI.convertFilingData(filteredFilings);
 
     return (
       <div>
-        <LineGraph filings={convertedFiling} metrics={selectedMetrics} size={size}/>
+        <LineGraph data={convertedFiling} dataLabels={dataLabels} size={size}/>
       </div>
     );
   }
@@ -26,6 +34,6 @@ class MetricLineGraph extends React.Component {
 export default connect((state) => {
   return {
     selectedCompanies: state.selections.companies,
-    selectedMetrics: state.selections.metrics,
+    selectedMetric: state.selections.metric,
   };
 })(MetricLineGraph);

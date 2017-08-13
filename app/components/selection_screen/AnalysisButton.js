@@ -13,7 +13,8 @@ class AnalysisButton extends React.Component {
 
   renderButtonText() {
     const {selections} = this.props;
-    let metricCount = selections.metrics.length;
+    // FIXME: metricCount varies between 0 and 2.
+    let metricCount = Object.getOwnPropertyNames(selections.metric).length;
     let companyCount = selections.companies.length;
     let buttonText = 'Analyze company';
     if (metricCount === 0 && companyCount === 0) {
