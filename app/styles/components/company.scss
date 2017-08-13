@@ -17,5 +17,19 @@
 
 .list-container {
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
+}
+
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.search-container {
+  width: 80%;
+
+  > :last-child {
+    width: 100%;
+  }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import LineGraph from './LineGraph';
+import MultiLineGraph from './MultiLineGraph';
 
 import * as listingAPI from 'App/api/companyListingAPI';
 import jsonData from 'data';
@@ -12,11 +12,9 @@ BUG: list on screen creates double lines
 class MetricLineGraph extends React.Component {
   render() {
     const {selectedCompanies, selectedMetric, size} = this.props;
-
     // Extract companies being plotted and the metric of focus
     let companyNames = selectedCompanies.map((company) => company.name);
     let dataLabels = {names: companyNames, dataType: selectedMetric};
-
     /* Extract filings corresponding to companies of interest and convert the
        data type to an array or array of arrays composed of data objects.
     */
@@ -25,7 +23,7 @@ class MetricLineGraph extends React.Component {
 
     return (
       <div>
-        <LineGraph data={convertedFiling} dataLabels={dataLabels} size={size}/>
+        <MultiLineGraph data={convertedFiling} dataLabels={dataLabels} size={size}/>
       </div>
     );
   }

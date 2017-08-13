@@ -4,13 +4,10 @@ import * as d3 from 'd3';
 require('ComponentStyles/line-graph');
 
 /*
-TODO: Fix the data formats... they make me sad.
-      Allow multiple companies to be displayed
-      Allow multiple companies and dataType to be displayed
-      Restructure code so as to not offend the gods
+FIXME: It's not very pretty...
 */
 
-class LineGraph extends React.Component {
+class MultiLineGraph extends React.Component {
   constructor(props) {
     super(props);
     this.createLineGraph = this.createLineGraph.bind(this);
@@ -49,6 +46,16 @@ class LineGraph extends React.Component {
 
     const {data, dataLabels} = this.props;
 
+    // Remove data set if empty (no filing for that company)
+    for (var i = 0; i < data.length; i++) {
+        if (data[i].length == 0) {
+            if (i > -1) {
+                data.splice(i, 1);
+                i--;
+            }
+        }
+    }
+
     // Extract metric code and name
     let metricCode = dataLabels.dataType.id;
     let metricName = dataLabels.dataType.name;
@@ -79,7 +86,7 @@ class LineGraph extends React.Component {
     */
     let xScale = d3.scaleTime().domain([extent.x[0], extent.x[1]]).rangeRound([0, width - 50]),
         yScale = d3.scaleLinear().domain([extent.y[0], extent.y[1]]).rangeRound([height, 0]),
-        colorScale = d3.scaleLinear().domain([0, data[0].length]).range(["red", "green"]);
+        colorScale = d3.scaleLinear().domain([0, data[0].length]).range(["blue", "red"]);
 
     // Remove previouse graph if there was one.
     node.selectAll("g").remove();
@@ -127,6 +134,7 @@ class LineGraph extends React.Component {
         .enter()
         .append("circle")
         .attr("class", `c${i}`)
+        .style("fill", colorScale(i))
         .attr("r", 3)
         .attr("cx", (d) => xScale(d.yearFormatted))
         .attr("cy", (d) => yScale(d.metric));
@@ -143,6 +151,7 @@ class LineGraph extends React.Component {
       .enter()
       .append("text")
       .attr("transform", (d, i) => {
+        console.log(d);
         let x = (xScale(d[d.length - 2].yearFormatted) + xScale(d[d.length - 1].yearFormatted))/2;
         let y = (yScale(d[d.length - 2].metric) + yScale(d[d.length - 1].metric))/2;
         return `translate(${x}, ${y})`;
@@ -154,10 +163,6 @@ class LineGraph extends React.Component {
       .style("fill", (d,i) => colorScale(i*2+1))
       .text((d, i) => dataLabels.names[i]);
 
-    g.selectAll('text.labels')
-      .each()
-
-
   }
 
   render() {
@@ -165,4 +170,4 @@ class LineGraph extends React.Component {
   }
 }
 
-export default LineGraph;
+export default MultiLineGraph;

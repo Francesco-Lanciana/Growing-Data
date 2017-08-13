@@ -3,15 +3,15 @@ import CompanySearch from './CompanySearch';
 
 require('ComponentStyles/company');
 
-const List = (props) => (
-  <div className="list-container">
+const SearchList = (props) => (
+  <div>
     <div className = "search-box">
       <CompanySearch/>
     </div>
-    <div>
+    <div className="list-container">
       {props.children}
     </div>
   </div>
 )
 
-export default (List);
+export default SearchList;

@@ -10,7 +10,7 @@ class CompanySearch extends React.Component {
     const {dispatch, searchText} = this.props;
 
     return (
-      <div className="container__header">
+      <div className="search-container">
         <input type="search" ref="searchText" placeholder="Search for a company" onChange={() => {
           const searchText = this.refs.searchText.value;
           dispatch(actions.setSearchText(searchText));

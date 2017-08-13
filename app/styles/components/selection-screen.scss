@@ -1,7 +1,7 @@
 #main-screen-content {
   display:flex;
   //flex-wrap:wrap-reverse;
-  height: 88vh;
+  height: 91vh;
 }
 
 @media (max-width: 800px) {
@@ -12,17 +12,25 @@
 
 #main-screen-content > * {
   font-size: 20px;
-  border-radius:7px;
+  border-radius:2px;
   margin:5px;
 }
 
 #company-list {
   order:1;
-  flex:2 1 400px;
+  flex:2 1 250px;
   overflow-y: scroll;
+  background: #FCFBFF;
+  margin: 12px 12px 12px 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-#metric-list {
+.right-content {
   order:2;
+  flex:1 0 auto;
+}
+
+#metric-list {
+  order:1;
   flex:1 0 auto;
 }
 #selected-companies-list {

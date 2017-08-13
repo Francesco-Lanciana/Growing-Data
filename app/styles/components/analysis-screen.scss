@@ -1,0 +1,26 @@
+.main-screen-content {
+  display:flex;
+  //flex-wrap:wrap-reverse;
+  height: 91vh;
+  flex-direction: column;
+}
+
+.company-list {
+  order:1;
+  flex:2 1 400px;
+  overflow-y: scroll;
+  background: #FCFBFF;
+  margin: 0 12px 12px 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.graph {
+  order:1;
+  flex:2 1 400px;
+  overflow-y: scroll;
+  background: #FCFBFF;
+  margin: 12px 12px 0 12px;
+  border-bottom: 1px solid grey;
+  //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
