@@ -59,13 +59,13 @@ class SelectionScreen extends React.Component {
     let companyCount = selections.companies.length;
     let helpText = 'Analyze company';
     if (metricCount === 0 && companyCount === 0) {
-      helpText = 'Make selection';
+      helpText = 'Select company/ies and metric';
     }
     else if (metricCount > 0 && companyCount === 0) {
-      helpText = 'Select companies';
+      helpText = 'Select company/s';
     }
     else if (metricCount === 0 && companyCount > 0) {
-      helpText = 'Select metrics';
+      helpText = 'Select metric';
     }
     else if (metricCount > 0 && companyCount >= 1) {
       let x,y;

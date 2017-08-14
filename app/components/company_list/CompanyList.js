@@ -4,9 +4,16 @@ import {connect} from 'react-redux';
 import Company from './Company';
 import SearchList from './SearchList';
 import {filterCompanies} from 'App/api/companyListingAPI';
+import {toggleSelectedCompanies} from 'App/actions/actions';
 
 
 class CompanyList extends React.Component {
+  constructor() {
+    super();
+    this.handleSelect = this.handleSelect.bind(this);
+  }
+
+  // Filter company list using search text and render the applicable companies
   renderCompanies() {
     const {companies, searchText} = this.props;
     let filteredCompanies = filterCompanies(companies, searchText.toLowerCase());
@@ -17,9 +24,16 @@ class CompanyList extends React.Component {
 
     return filteredCompanies.map((company) => {
       return (
-        <Company key={company.id} {...company}/>
+        <Company key={company.id} onSelect={this.handleSelect} {...company}/>
       );
     });
+  }
+
+  // Handles state changes upon company selection
+  handleSelect(company) {
+    const {dispatch} = this.props;
+    const {name, id, selected} = company.props;
+    dispatch(toggleSelectedCompanies(name, id, !selected));
   }
 
   render() {
