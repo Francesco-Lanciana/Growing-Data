@@ -1,5 +1,3 @@
-const uuidv4 = require('uuid/v4');
-
 export const setSearchText = (searchText) => {
   return {
     type: 'SET_SEARCH_TEXT',
@@ -61,6 +59,7 @@ export const addMetrics = (metrics) => {
   };
 };
 
+// TODO: This is so damn confusing, companies shouldn't know if they are selected
 export const toggleSelectedMetrics = (name, id, selected) => {
   return dispatch => {
 

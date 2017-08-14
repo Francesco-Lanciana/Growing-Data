@@ -1,4 +1,5 @@
 import React from 'react';
+
 import MetricLineGraph from 'Components/metric_graph/MetricLineGraph';
 import CompanyList from 'Components/company_list/CompanyList';
 

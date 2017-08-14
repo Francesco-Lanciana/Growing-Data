@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 import Company from './Company';
 import SearchList from './SearchList';
 import {filterCompanies} from 'App/api/companyListingAPI';
-import {toggleSelectedCompanies} from 'App/actions/actions';
+import {toggleSelectedCompanies, setSearchText} from 'App/actions/actions';
 
 
 class CompanyList extends React.Component {
@@ -36,9 +36,14 @@ class CompanyList extends React.Component {
     dispatch(toggleSelectedCompanies(name, id, !selected));
   }
 
+  handleSearch(searchText) {
+    const {dispatch} = this.props;
+    dispatch(setSearchText(searchText));
+  }
+
   render() {
     return (
-      <SearchList>
+      <SearchList onSearch={this.handleSearch}>
         {this.renderCompanies()}
       </SearchList>
     );

@@ -37,8 +37,8 @@ export const extractFilings = (data) => {
   return filings;
 }
 
+// Get the filings corresponding to the companies of interest
 export const filterFilings = (filings, companies) => {
-  //May be an issue if pass by reference...
   let filteredFilings = {};
 
   for (let i = 0; i < companies.length; i++) {
@@ -49,8 +49,8 @@ export const filterFilings = (filings, companies) => {
   return filteredFilings;
 }
 
+// Get the companies corresponding to the current search text
 export const filterCompanies = (companies, searchText) => {
-  //May be an issue if pass by reference...
   let filteredCompanies = companies;
 
   filteredCompanies = filteredCompanies.filter((company) => {
@@ -61,6 +61,7 @@ export const filterCompanies = (companies, searchText) => {
   return filteredCompanies;
 }
 
+// Return only the companies that have been selected by the user
 export const getSelectedCompanies = (companies) => {
   let filteredCompanies = companies;
 
@@ -69,7 +70,7 @@ export const getSelectedCompanies = (companies) => {
   })
 }
 
-// Convert filings to array of filings
+// Convert filings to array of filings => [[{year 1 data},{},{}],[{},{},{}]]
 export const convertFilingData = (filingData) => {
   let companyFilingData = [];
 

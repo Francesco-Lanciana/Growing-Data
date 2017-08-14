@@ -1,7 +1,3 @@
-/*
-
-*/
-
 import React from 'react';
 import Media from 'react-media';
 import {connect} from 'react-redux';
@@ -38,7 +34,6 @@ class SelectionScreen extends React.Component {
         graphHeight: window.innerHeight * 0.5
       });
     }
-
   }
 
   componentWillMount() {
@@ -49,8 +44,6 @@ class SelectionScreen extends React.Component {
   componentWillUnmount() {
     window.removeEventListener('resize', this.onResize);
   }
-
-
 
   renderDashboardGraph() {
     const {selections} = this.props;

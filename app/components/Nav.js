@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import Media from 'react-media';
+
 import AnalysisButton from 'Components/selection_screen/AnalysisButton';
 
 require('ComponentStyles/nav');

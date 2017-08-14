@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+
 import {toggleSelectedMetrics} from 'App/actions/actions';
 
 require('ComponentStyles/metric');
