@@ -31,6 +31,7 @@ class CompanyList extends React.Component {
 
   // Handles state changes upon company selection
   handleSelect(company) {
+    console.log(company);
     const {dispatch} = this.props;
     const {name, id, selected} = company.props;
     dispatch(toggleSelectedCompanies(name, id, !selected));
