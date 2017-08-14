@@ -9,7 +9,7 @@ import {filterCompanies} from 'App/api/companyListingAPI';
 class CompanyList extends React.Component {
   renderCompanies() {
     const {companies, searchText} = this.props;
-    let filteredCompanies = filterCompanies(companies, searchText);
+    let filteredCompanies = filterCompanies(companies, searchText.toLowerCase());
 
     if (filteredCompanies.length === 0) {
       return <p className="company-listing-message">There are no matches</p>
