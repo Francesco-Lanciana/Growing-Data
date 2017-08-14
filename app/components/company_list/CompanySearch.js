@@ -5,6 +5,11 @@ var actions = require('App/actions/actions');
 require('ComponentStyles/company-search');
 
 class CompanySearch extends React.Component {
+  componentWillUnmount() {
+    const {dispatch} = this.props;
+    dispatch(actions.setSearchText(""));
+  }
+
   render() {
 
     const {dispatch, searchText} = this.props;
