@@ -4,7 +4,10 @@ import * as d3 from 'd3';
 require('ComponentStyles/line-graph');
 
 /*
-FIXME: It's not very pretty...
+FIXME: * It's not very pretty... *
+       * Pass companies that have no filing up to MetricLineGraph who
+       can then put it in state. A banner will use this to notify users when
+       a company has no filing *
 */
 
 class MultiLineGraph extends React.Component {
@@ -151,7 +154,6 @@ class MultiLineGraph extends React.Component {
       .enter()
       .append("text")
       .attr("transform", (d, i) => {
-        console.log(d);
         let x = (xScale(d[d.length - 2].yearFormatted) + xScale(d[d.length - 1].yearFormatted))/2;
         let y = (yScale(d[d.length - 2].metric) + yScale(d[d.length - 1].metric))/2;
         return `translate(${x}, ${y})`;

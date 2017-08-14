@@ -15,6 +15,13 @@
   display: flex;
 }
 
+.company-cell:hover {
+  background: $blue;
+  .company-name {
+    color: #FCFBFF;
+  }
+}
+
 .list-container {
   height: 100%;
   overflow-y: scroll;

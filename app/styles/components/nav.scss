@@ -4,6 +4,7 @@
 
   background-color: $black;
   display: flex;
+  justify-content: space-between;
 
   .website-title {
     color: $title-color;
@@ -13,13 +14,22 @@
 
   }
 
+  .top-bar-right {
+    margin: round(($navbar-height - $title-size + 4)/2);
+  }
+
   a {
     text-decoration: none;
   }
 
 }
 
-
+.button {
+  width: 130px;
+  height: 30px;
+  border-radius: 22px;
+  background: #FCFBFF;
+}
 
 .skinny-bar {
   height: 4px;

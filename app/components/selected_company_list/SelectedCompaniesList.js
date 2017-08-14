@@ -26,6 +26,9 @@ class SelectedCompanyList extends React.Component {
   render() {
     return (
       <div className="selected-company-container">
+        <div className="selected-company-title">
+          Selected Companies
+        </div>
         {this.renderSelectedCompanies()}
       </div>
     );

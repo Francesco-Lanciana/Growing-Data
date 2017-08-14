@@ -1,3 +1,5 @@
+@import "../variables";
+
 #main-screen-content {
   display:flex;
   //flex-wrap:wrap-reverse;
@@ -8,6 +10,10 @@
   #main-screen-content {
     flex-direction: column-reverse;
   }
+
+  #graph-container-dashboard {
+    display: none;
+  }
 }
 
 #main-screen-content > * {
@@ -16,28 +22,69 @@
   margin:5px;
 }
 
-#company-list {
+.company-list {
   order:1;
-  flex:2 1 250px;
+  flex:1 0 300px;
   overflow-y: scroll;
   background: #FCFBFF;
   margin: 12px 12px 12px 12px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.right-content {
-  order:2;
-  flex:1 0 auto;
+
+.selected-company-title {
+  border-bottom: 1px solid grey;
+  padding: 3px;
 }
 
-#metric-list {
-  order:1;
-  flex:1 0 auto;
+.selected-companies-list {
+  background: #FCFBFF;
+  margin-bottom: 12px;
+  padding-left: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
-#selected-companies-list {
-  order:3;
+
+.right-content {
+  display: flex;
+  order:2;
+  flex-direction: column;
+  flex:1 0 auto;
+  align-content: space-between;
+  align-items: center;
+
+  .metric-list {
+    order:1;
+    width: 100%;
+    flex:1 0 auto;
+    background: #FCFBFF;
+    margin-bottom: 12px;
+    padding-left: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  #graph-container-dashboard {
+    order: 2;
+    flex: 1 0 auto;
+    background: #FCFBFF;
+    width: 100%;
+    height: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    > div {
+      width: 150px;
+      margin: 0 auto;
+      margin-top: 25vh;
+      color: $red;
+    }
+  }
+
+}
+
+.selected-companies-list {
+  order:1;
   flex:1 1 200px;
 }
 
+//REMOVE SOON
 #metric-graph {
   order:3;
   flex:1 1 200px;

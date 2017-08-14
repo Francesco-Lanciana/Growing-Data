@@ -1,5 +1,13 @@
 @import "../variables";
 
 .metric-selected {
-  color: $green;
+  color: $purple;
+}
+
+.metric {
+    padding: 3px;
+}
+
+.metric:hover {
+  color: $purple;
 }
