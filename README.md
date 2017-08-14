@@ -2,6 +2,8 @@
 
 This web-based application creates a simple interface in front of your pre-defined company metrics. Using this interface you can easily view your company metrics either individually or in aggregate. You can also analyze how your company compares with competitors in regards to any of these metrics.
 
+You can visit the built project at: *_http://www.francescolanciana.com_*
+
 To run locally, you will need to:
 
 1. Install NodeJS from [https://nodejs.org/](https://nodejs.org/).
