@@ -1,10 +1,6 @@
 @import "../variables";
 
-.metric.metric-selected {
-  background-color: $light-blue;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, .6);
-}
-
+// Individual metric buttons
 .metric {
     border-radius: 4px;
     margin: 6px;
@@ -16,8 +12,40 @@
     transition: background-color .3s;
     position: relative;
     overflow: hidden;
-  }
+}
 
+// Metric is being selected
+.metric.metric-selected {
+  background-color: $light-blue;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .6);
+  overflow: visible;
+
+  .circle {
+    display: block;
+  }
+}
+
+// Metric is being deselected
+.metric.metric-selected:active {
+  overflow: hidden;
+  .circle {
+    display: none;
+  }
+}
+
+// Selected metric is indicated via circle in top right corner
+.circle {
+  display: none;
+  position: absolute;
+  left: 95%;
+  top: -18%;
+  border-radius: 100%;
+  width: 15px;
+  background-color: $pink;
+  height: 15px;
+}
+
+// Fluid metric button font sizes for larger screens
 @media (max-width: 900px) {
   .metric {
     font-size: 14px;
@@ -30,7 +58,7 @@
   }
 }
 
-
+// Metric button ripple animation when clicked
 .metric:before {
   content: "";
 
@@ -55,6 +83,8 @@
 
   transition: width .15s ease-out, padding-top .15s ease-out;
 }
+
+// Metric hover animation
 .metric:hover {
   background-color: $light-blue;
   cursor: pointer;

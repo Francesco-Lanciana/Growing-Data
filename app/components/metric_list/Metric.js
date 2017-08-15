@@ -15,6 +15,9 @@ class Metric extends React.Component {
         dispatch(toggleSelectedMetrics(name, id, !selected));
       }}>
         {name}
+        <div className="circle">
+
+        </div>
       </div>
     );
   }

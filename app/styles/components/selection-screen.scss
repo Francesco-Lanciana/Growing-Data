@@ -78,6 +78,9 @@
 
   #graph-container-dashboard {
     order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex: 1 0 auto;
     background: #FCFBFF;
     width: 100%;
@@ -86,8 +89,6 @@
 
     > div {
       width: 320px;
-      margin: 0 auto;
-      margin-top: 25vh;
       color: $red;
       text-align: center;
     }

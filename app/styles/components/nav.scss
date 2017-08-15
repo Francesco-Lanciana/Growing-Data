@@ -2,7 +2,7 @@
 
 // Navigation bar
 .top-bar {
-  background-color: #E91E63;
+  background-color: $navbar-main-color;
   display: flex;
   justify-content: space-between;
 
@@ -25,13 +25,13 @@
 // Navigation under-bar
 .skinny-bar {
   height: 8px;
-  background-color: #C2185B;
+  background-color: $navbar-underbar-color;
   margin-bottom: 5px;
 }
 
 // Make selection button
 .button {
-  width: 115px;
+  width: 120px;
   height: 30px;
   border-radius: 2px;
   border: 3px solid $white;
