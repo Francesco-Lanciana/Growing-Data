@@ -24,7 +24,7 @@
 
 .company-list {
   order:1;
-  flex:1 0 300px;
+  flex:1 0.5 300px;
   overflow-y: scroll;
   background: #FCFBFF;
   margin: 12px 12px 12px 12px;
@@ -34,6 +34,7 @@
 .selected-company-title {
   border-bottom: 1px solid grey;
   padding: 3px;
+  margin-bottom: 6px;
 }
 
 .selected-companies-list {
@@ -51,14 +52,28 @@
   align-content: space-between;
   align-items: center;
 
-  .metric-list {
+
+  .metric-list-container {
     order:1;
     width: 100%;
+    display: flex;
     flex:1 0 auto;
     background: #FCFBFF;
     margin-bottom: 12px;
     padding-left: 4px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  @media (max-width: 800px) {
+    .metric-list-container {
+      margin-bottom: 0;
+    }
+  }
+
+  .metric-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
   }
 
   #graph-container-dashboard {
@@ -80,18 +95,18 @@
 
 }
 
+// Selected companies list container
 .selected-companies-list {
   order:1;
   flex:1 1 200px;
+  overflow-y: scroll;
+  padding: 5px 0 0 10px;
 }
 
-//REMOVE SOON
-#metric-graph {
-  order:3;
-  flex:1 1 200px;
+.selected-company {
+  color: $green;
 }
 
-#analysis-button {
-  order:4;
-  flex:1 1 200px;
+.selected-company:nth-child(odd) {
+  background-color: #F4F4F4;
 }

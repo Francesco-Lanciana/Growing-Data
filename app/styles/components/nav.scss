@@ -1,37 +1,56 @@
 @import "../variables";
 
+// Navigation bar
 .top-bar {
-
-  background-color: $black;
+  background-color: #E91E63;
   display: flex;
   justify-content: space-between;
 
   .website-title {
     color: $title-color;
-    align-items: center;
     margin: round(($navbar-height - $title-size + 4)/2);
     font-size: $title-size;
-
   }
 
   .top-bar-right {
     margin: round(($navbar-height - $title-size + 4)/2);
   }
 
+  // Website title is a link which are usually underlined
   a {
     text-decoration: none;
   }
-
 }
 
-.button {
-  width: 130px;
-  height: 30px;
-  border-radius: 22px;
-  background: #FCFBFF;
-}
-
+// Navigation under-bar
 .skinny-bar {
-  height: 4px;
-  background-color: $pink;
+  height: 8px;
+  background-color: #C2185B;
+  margin-bottom: 5px;
+}
+
+// Make selection button
+.button {
+  width: 115px;
+  height: 30px;
+  border-radius: 2px;
+  border: 3px solid $white;
+  color: $white;
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  border-color: $purple;
+  transition: all .3s;
+}
+
+.hollow {
+  background-color: transparent;
+}
+
+@media (min-width: 800px) {
+  #analysis-button {
+    display: none;
+  }
 }

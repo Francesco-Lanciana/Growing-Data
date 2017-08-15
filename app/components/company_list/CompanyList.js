@@ -6,11 +6,14 @@ import SearchList from './SearchList';
 import {filterCompanies} from 'App/api/companyListingAPI';
 import {toggleSelectedCompanies, setSearchText} from 'App/actions/actions';
 
+require('ComponentStyles/company-list');
 
 class CompanyList extends React.Component {
   constructor() {
     super();
     this.handleSelect = this.handleSelect.bind(this);
+    this.renderCompanies = this.renderCompanies.bind(this);
+    this.handleSearch = this.handleSearch.bind(this);
   }
 
   // Filter company list using search text and render the applicable companies
@@ -31,7 +34,6 @@ class CompanyList extends React.Component {
 
   // Handles state changes upon company selection
   handleSelect(company) {
-    console.log(company);
     const {dispatch} = this.props;
     const {name, id, selected} = company.props;
     dispatch(toggleSelectedCompanies(name, id, !selected));

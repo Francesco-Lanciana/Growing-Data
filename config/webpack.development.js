@@ -15,7 +15,7 @@ const developmentConfig = merge([
   },
   parts.generateSourceMaps({ type: 'cheap-module-source-map' }),
   parts.loadStyleSheets({ exlude: /node_modules/ }),
-  parts.loadImages(),
+  parts.loadImages({options: {limit: 25000}}),
   parts.loadFonts(),
   parts.loadJavaScript({
     include: PATHS.app,

@@ -27,8 +27,6 @@ class SelectionScreen extends React.Component {
         graphHeight: document.getElementById("graph-container-dashboard").clientHeight
       });
     } else {
-      console.log("DD");
-
       this.setState({
         graphWidth: window.innerWidth * 0.65,
         graphHeight: window.innerHeight * 0.5
@@ -93,7 +91,7 @@ class SelectionScreen extends React.Component {
           </div>
         )}/>
         <div className="right-content">
-          <div className="metric-list">
+          <div className="metric-list-container">
             <MetricList/>
           </div>
           <div id="graph-container-dashboard">

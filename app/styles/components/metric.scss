@@ -1,13 +1,61 @@
 @import "../variables";
 
-.metric-selected {
-  color: $purple;
+.metric.metric-selected {
+  background-color: $light-blue;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .6);
 }
 
 .metric {
-    padding: 3px;
+    border-radius: 4px;
+    margin: 6px;
+    padding: 6px;
+    background: $blue;
+    color: $white;
+    align-self: flex-start;
+    font-size: 1.6vw;
+    transition: background-color .3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+@media (max-width: 900px) {
+  .metric {
+    font-size: 14px;
+  }
 }
 
+@media (min-width: 1400px) {
+  .metric {
+    font-size: 22px;
+  }
+}
+
+
+.metric:before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 0;
+  padding-top: 0;
+
+  border-radius: 100%;
+
+  background-color: rgba(236, 240, 241, .3);
+
+  transform: translate(-50%, -50%);
+}
+
+.metric:active:before {
+  width: 120%;
+  padding-top: 120%;
+
+  transition: width .15s ease-out, padding-top .15s ease-out;
+}
 .metric:hover {
-  color: $purple;
+  background-color: $light-blue;
+  cursor: pointer;
 }

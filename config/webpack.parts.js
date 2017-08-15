@@ -200,6 +200,7 @@ exports.extractHTML = ({ template }) => {
       plugins: [
       new HtmlWebpackPlugin({
         filename: 'index.html',
+        favicon: '../app/favicon.png',
         template,
         inject: true,
       }),

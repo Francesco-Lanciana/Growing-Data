@@ -1,0 +1,46 @@
+@import "../variables";
+
+// Company list and search container
+.list-container {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+// Company cell
+.company-cell {
+  border-bottom: 1px solid $light-grey-border;
+  display: flex;
+}
+
+.company-cell:hover {
+  background: $blue;
+
+  .company-name {
+    color: $white;
+  }
+}
+
+// Company cell contents (name and checkbox)
+.company-name {
+  color: $blue;
+  margin: 15px;
+}
+
+.company-selection {
+  width: 20px;
+  margin: 15px;
+}
+
+// Search input
+.search-container {
+  border-bottom: 1px solid $light-grey-border;
+  padding: 1rem;
+  width: 80%;
+  margin: 0 auto;
+
+  // Large search input is >= 16px font-size
+  > input {
+    font-size: 16px;
+    width: 100%;
+  }
+}

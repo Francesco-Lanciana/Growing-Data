@@ -1,7 +1,5 @@
 import React from 'react';
 
-require('ComponentStyles/company');
-
 // Keep as class, to be used by companyList to update redux stores state
 class Company extends React.Component {
 

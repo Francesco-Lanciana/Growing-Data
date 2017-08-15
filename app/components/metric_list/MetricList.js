@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
+import List from './List';
 import Metric from './Metric';
 import jsonData from 'data';
 
@@ -22,9 +23,9 @@ class MetricList extends React.Component {
 
   render() {
     return (
-      <div>
+      <List>
         {this.renderCompanies()}
-      </div>
+      </List>
     );
   }
 }

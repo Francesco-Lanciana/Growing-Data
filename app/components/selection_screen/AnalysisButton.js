@@ -4,8 +4,6 @@ import {Link} from 'react-router-dom';
 
 import AnalyticsScreen from 'Components/analytics_screen/AnalyticsScreen';
 
-require('ComponentStyles/buttons');
-
 class AnalysisButton extends React.Component {
   constructor(props) {
     super(props);
@@ -36,7 +34,7 @@ class AnalysisButton extends React.Component {
     return (
       <div>
         <Link to="/analytics">
-          <button className="button hollow analysis-button">{this.renderButtonText()}</button>
+          <button className="button hollow">{this.renderButtonText()}</button>
         </Link>
 
       </div>

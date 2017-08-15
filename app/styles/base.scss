@@ -1,8 +1,10 @@
+@import './variables';
+
 body {
   margin: 0px;
   font-family: Verdana, Arial, sans-serif;
   height: 100%;
-  background: #EFEEF4;
+  background: $white;
 }
 
 html {
