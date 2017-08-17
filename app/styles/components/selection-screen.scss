@@ -10,10 +10,6 @@
   #main-screen-content {
     flex-direction: column-reverse;
   }
-
-  #graph-container-dashboard {
-    display: none;
-  }
 }
 
 #main-screen-content > * {
@@ -76,6 +72,7 @@
     align-content: flex-start;
   }
 
+  // FIXME: Width causes issue on elongated phone screen (WHY)
   #graph-container-dashboard {
     order: 2;
     display: flex;
@@ -93,6 +90,13 @@
       text-align: center;
     }
   }
+
+  //NOT WORKING
+  // @media (max-width: 800px) {
+  //   #graph-container-dashboard {
+  //     display: none;
+  //   }
+  // }
 
 }
 

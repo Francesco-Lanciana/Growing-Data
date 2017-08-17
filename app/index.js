@@ -5,7 +5,7 @@ import {Provider} from 'react-redux';
 import Main from './components/Main';
 
 import {addCompanies, addMetrics} from 'App/actions/actions';
-const store = require('App/store/store').configure();
+export const store = require('App/store/store').configure();
 import * as listingAPI from 'App/api/companyListingAPI';
 import jsonData from 'data';
 

@@ -1,3 +1,5 @@
+import jsonData from 'data';
+
 // Extract the names of the companies from a JSON data object
 export const extractCompanies = (data) => {
   let companyNames = [];
@@ -90,4 +92,11 @@ export const convertFilingData = (filingData) => {
     }
   }
   return companyFilingData;
+}
+
+export const getFiling = (id) => {
+  if (jsonData.filings.hasOwnProperty(id)) {
+    return jsonData.filings[id];
+  }
+  return null;
 }

@@ -4,7 +4,6 @@ var initialSelections = {
   companies: [],
 };
 
-
 // Reducers
 export const searchTextReducer = (state = '', action) => {
   switch (action.type) {
@@ -97,3 +96,26 @@ export const selectionReducer = (state = initialSelections, action) => {
       return state;
   };
 };
+
+
+export const notificationsReducer = (state = [], action) => {
+  switch (action.type) {
+    case 'ADD_NOTIFICATION':
+      return [
+        ...state,
+        action.notification
+      ];
+    case 'REMOVE_NOTIFICATION':
+      return [
+        ...state.slice(1)
+      ];
+    case 'REMOVE_NOTIFICATION_BY_ID':
+      let filteredNotifications = state.filter((notification) => {
+        return notification.id != action.id;
+      });
+
+      return filteredNotifications;
+    default:
+      return state;
+  }
+}

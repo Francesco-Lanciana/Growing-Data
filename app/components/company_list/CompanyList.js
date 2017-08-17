@@ -1,9 +1,10 @@
 import React from 'react';
 import {connect} from 'react-redux';
 
+import NotificationManager from 'Components/notifications/NotificationManager';
 import Company from './Company';
 import SearchList from './SearchList';
-import {filterCompanies} from 'App/api/companyListingAPI';
+import {filterCompanies, getFiling} from 'App/api/companyListingAPI';
 import {toggleSelectedCompanies, setSearchText} from 'App/actions/actions';
 
 require('ComponentStyles/company-list');
@@ -26,8 +27,14 @@ class CompanyList extends React.Component {
     }
 
     return filteredCompanies.map((company) => {
+      // Companies with no filing data are greyed out
+      let noDataAvailable = false;
+      if (getFiling(company.id) == null) {
+        noDataAvailable = true;
+      }
+
       return (
-        <Company key={company.id} onSelect={this.handleSelect} {...company}/>
+        <Company key={company.id} onSelect={this.handleSelect} noData={noDataAvailable} {...company}/>
       );
     });
   }
@@ -36,7 +43,12 @@ class CompanyList extends React.Component {
   handleSelect(company) {
     const {dispatch} = this.props;
     const {name, id, selected} = company.props;
-    dispatch(toggleSelectedCompanies(name, id, !selected));
+
+    if (getFiling(id) == null) {
+      NotificationManager.warning("No Data Available", `${name} has no filing data`);
+    } else {
+      dispatch(toggleSelectedCompanies(name, id, !selected));
+    }
   }
 
   handleSearch(searchText) {

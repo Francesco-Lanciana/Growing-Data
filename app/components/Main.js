@@ -5,6 +5,7 @@ import Nav from 'Nav';
 import SelectionScreen from './selection_screen/SelectionScreen';
 import AnalyticsScreen from './analytics_screen/AnalyticsScreen';
 
+import NotificationList from './notifications/NotificationList';
 
 require('base');
 
@@ -15,6 +16,7 @@ class Main extends React.Component {
         <Router>
             <div>
                 <Nav/>
+                <NotificationList/>
                 <Route exact path="/" component={SelectionScreen}/>
                 <Route path="/analytics" component={AnalyticsScreen}/>
             </div>

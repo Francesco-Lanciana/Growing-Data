@@ -9,6 +9,7 @@ export var configure = (initialState ={}) => {
     metrics: reducers.metricsReducer,
     companies: reducers.companiesReducer,
     selections: reducers.selectionReducer,
+    notifications: reducers.notificationsReducer,
   });
 
   const store = redux.createStore(reducer, initialState, redux.compose(

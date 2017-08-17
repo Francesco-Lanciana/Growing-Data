@@ -3,18 +3,33 @@ import React from 'react';
 // Keep as class, to be used by companyList to update redux stores state
 class Company extends React.Component {
 
-  render() {
-    const {name, selected, onSelect} = this.props;
-
+  //Disable input if no filing data is available
+  renderInput(selected, noData) {
+    if (noData) {
+      return (<input type="checkbox" checked={selected} id="company-selection" name="company-name" disabled onChange={() => ''}/>);
+    }
     return (
-      <div className="company-cell" onClick={() => onSelect(this)}>
+      <input type="checkbox" checked={selected} id="company-selection" name="company-name" onChange={() => ''}/>
+    )
+  }
+
+  render() {
+    const {name, selected, noData, onSelect} = this.props;
+    let cellClassName = "company-cell";
+    let nameClassName = "company-name"
+    if (noData) {
+      cellClassName = "company-cell no-data";
+      nameClassName = "company-name no-data";
+    }
+    return (
+      <div className={cellClassName} onClick={() => onSelect(this)}>
 
         <div className="company-selection">
-          <input type="checkbox" checked={selected} id="company-selection" name="company-name" onChange={() => ''}/>
+          {this.renderInput(selected, noData)}
           <label htmlFor="company-selection"></label>
         </div>
 
-        <div className="company-name">
+        <div className={nameClassName}>
           {name}
         </div>
 

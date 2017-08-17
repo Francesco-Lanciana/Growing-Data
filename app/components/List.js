@@ -1,7 +1,7 @@
 import React from 'react';
 
 const List = (props) => (
-  <div className="metric-list">
+  <div className={props.className}>
     {props.children}
   </div>
 )

@@ -20,6 +20,18 @@
   }
 }
 
+.company-cell.no-data:hover {
+  background: #E1E1DF;
+
+  .company-name.no-data {
+    color: $white;
+  }
+}
+
+.company-name.no-data {
+  color: #E1E1DF;
+}
+
 // Company cell contents (name and checkbox)
 .company-name {
   color: $blue;

@@ -113,3 +113,26 @@ export const removeSelection = (type, id) => {
     id,
   };
 };
+
+// Adds a notification to the notification queue
+export const addNotification = (notification) => {
+  return {
+    type: 'ADD_NOTIFICATION',
+    notification
+  };
+};
+
+// Removes the first notification in the notification view
+export const removeNotification = () => {
+  return {
+    type: 'REMOVE_NOTIFICATION'
+  };
+};
+
+// Removes the first notification in the notification view
+export const removeNotificationById = (id) => {
+  return {
+    type: 'REMOVE_NOTIFICATION_BY_ID',
+    id
+  };
+};
