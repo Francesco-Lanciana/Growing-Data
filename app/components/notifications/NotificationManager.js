@@ -38,6 +38,18 @@ class NotificationManager extends React.Component {
     };
     store.dispatch(addNotification(notification));
   }
+
+  error(title, message) {
+    //const {dispatch} = this.props;
+    const notification = {
+      type: NOTIFICATION_TYPES.error,
+      id: createUUID(),
+      title,
+      message,
+      time: 2500,
+    };
+    store.dispatch(addNotification(notification));
+  }
 }
 // let NotificationManagerR = connect((state) => state)(NotificationManager);
 export default new NotificationManager();
